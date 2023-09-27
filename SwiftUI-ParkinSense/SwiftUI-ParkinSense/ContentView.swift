@@ -14,6 +14,11 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundStyle(.tint)
             Text("ParkinSense")
+                .font(.title)
+                .fontWeight(.heavy)
+                .foregroundColor(Color.orange)
+                .multilineTextAlignment(.center)
+                
         }
         .padding()
     }
