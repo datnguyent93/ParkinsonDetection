@@ -14,6 +14,12 @@
 		0DC3A89C2AC3FEF30009B7D5 /* SwiftUI_ParkinSenseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3A89B2AC3FEF30009B7D5 /* SwiftUI_ParkinSenseTests.swift */; };
 		0DC3A8A62AC3FEF30009B7D5 /* SwiftUI_ParkinSenseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3A8A52AC3FEF30009B7D5 /* SwiftUI_ParkinSenseUITests.swift */; };
 		0DC3A8A82AC3FEF30009B7D5 /* SwiftUI_ParkinSenseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3A8A72AC3FEF30009B7D5 /* SwiftUI_ParkinSenseUITestsLaunchTests.swift */; };
+		250470D32AD365BC0053D8EF /* ProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250470D22AD365BC0053D8EF /* ProfilePage.swift */; };
+		250470D52AD365FA0053D8EF /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250470D42AD365FA0053D8EF /* SignUp.swift */; };
+		250470D72AD366120053D8EF /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250470D62AD366120053D8EF /* Login.swift */; };
+		250470D92AD3664D0053D8EF /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250470D82AD3664D0053D8EF /* MainPage.swift */; };
+		250470DF2AD371350053D8EF /* Timer2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250470DE2AD371350053D8EF /* Timer2.swift */; };
+		250470E12AD372420053D8EF /* TestVowel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250470E02AD372420053D8EF /* TestVowel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,12 @@
 		0DC3A8A12AC3FEF30009B7D5 /* SwiftUI-ParkinSenseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-ParkinSenseUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DC3A8A52AC3FEF30009B7D5 /* SwiftUI_ParkinSenseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ParkinSenseUITests.swift; sourceTree = "<group>"; };
 		0DC3A8A72AC3FEF30009B7D5 /* SwiftUI_ParkinSenseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ParkinSenseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		250470D22AD365BC0053D8EF /* ProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePage.swift; sourceTree = "<group>"; };
+		250470D42AD365FA0053D8EF /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		250470D62AD366120053D8EF /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		250470D82AD3664D0053D8EF /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
+		250470DE2AD371350053D8EF /* Timer2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer2.swift; sourceTree = "<group>"; };
+		250470E02AD372420053D8EF /* TestVowel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVowel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +108,12 @@
 			children = (
 				0DC3A88A2AC3FEF10009B7D5 /* SwiftUI_ParkinSenseApp.swift */,
 				0DC3A88C2AC3FEF10009B7D5 /* ContentView.swift */,
+				250470D22AD365BC0053D8EF /* ProfilePage.swift */,
+				250470D42AD365FA0053D8EF /* SignUp.swift */,
+				250470D62AD366120053D8EF /* Login.swift */,
+				250470D82AD3664D0053D8EF /* MainPage.swift */,
+				250470DE2AD371350053D8EF /* Timer2.swift */,
+				250470E02AD372420053D8EF /* TestVowel.swift */,
 				0DC3A88E2AC3FEF30009B7D5 /* Assets.xcassets */,
 				0DC3A8902AC3FEF30009B7D5 /* Preview Content */,
 			);
@@ -257,8 +275,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				250470DF2AD371350053D8EF /* Timer2.swift in Sources */,
+				250470D32AD365BC0053D8EF /* ProfilePage.swift in Sources */,
+				250470D72AD366120053D8EF /* Login.swift in Sources */,
+				250470D52AD365FA0053D8EF /* SignUp.swift in Sources */,
 				0DC3A88D2AC3FEF10009B7D5 /* ContentView.swift in Sources */,
 				0DC3A88B2AC3FEF10009B7D5 /* SwiftUI_ParkinSenseApp.swift in Sources */,
+				250470D92AD3664D0053D8EF /* MainPage.swift in Sources */,
+				250470E12AD372420053D8EF /* TestVowel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
