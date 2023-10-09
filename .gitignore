@@ -341,3 +341,6 @@ iOSInjectionProject/
 
 # End of https://www.toptal.com/developers/gitignore/api/python,jupyternotebooks,swift,c++,c
 .vscode/c_cpp_properties.json
+
+# Other
+my_model.h5
