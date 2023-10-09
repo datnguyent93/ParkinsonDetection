@@ -4,37 +4,38 @@
 //
 //  Created by user242759 on 04/07/1402 AP.
 //
-
 import SwiftUI
 
 struct ContentView: View {
-    @State private var username: String = ""
-    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("ParkinSense Testing")
-                .font(.system(size:72))
-                .fontWeight(.heavy)
-                .foregroundColor(Color.orange)
-                .multilineTextAlignment(.center)
-            
-            TextField(
-                "User name (email address)",
-                text: $username
-            )
-            .frame(width:480, height:60)
-            .textInputAutocapitalization(.never)
-            .disableAutocorrection(true)
-            .border(.secondary)        }
-        .padding()
+        NavigationView{
+            ZStack{
+                
+                VStack{
+                    Image("Logo")
+                        .resizable()
+                    
+                        Button("Tap to continue"){
+                            NavigationLink(destination: ProfilePage()){
+                                
+                        }
+                        
+                    }.foregroundColor(.white)
+                        .font(.title)
+                        .bold()
+                        .frame(width: 300, height: 50)
+                        .background(Color.purple)
+                        .cornerRadius(40)
+                }
+                
+            }
+        }.navigationViewStyle(StackNavigationViewStyle())
     }
-    
-    
 }
+
+
 
 #Preview {
     ContentView()
 }
+
