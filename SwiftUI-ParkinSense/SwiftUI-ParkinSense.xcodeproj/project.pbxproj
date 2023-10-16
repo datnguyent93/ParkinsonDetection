@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0544F49F2ADDD945002CBBE8 /* ImgUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0544F49E2ADDD945002CBBE8 /* ImgUpload.swift */; };
 		0DC3A88B2AC3FEF10009B7D5 /* SwiftUI_ParkinSenseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3A88A2AC3FEF10009B7D5 /* SwiftUI_ParkinSenseApp.swift */; };
 		0DC3A88D2AC3FEF10009B7D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3A88C2AC3FEF10009B7D5 /* ContentView.swift */; };
 		0DC3A88F2AC3FEF30009B7D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DC3A88E2AC3FEF30009B7D5 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0544F49E2ADDD945002CBBE8 /* ImgUpload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgUpload.swift; sourceTree = "<group>"; };
 		0DC3A8872AC3FEF10009B7D5 /* SwiftUI-ParkinSense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-ParkinSense.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DC3A88A2AC3FEF10009B7D5 /* SwiftUI_ParkinSenseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ParkinSenseApp.swift; sourceTree = "<group>"; };
 		0DC3A88C2AC3FEF10009B7D5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 		0DC3A8892AC3FEF10009B7D5 /* SwiftUI-ParkinSense */ = {
 			isa = PBXGroup;
 			children = (
+				0544F49E2ADDD945002CBBE8 /* ImgUpload.swift */,
 				0DC3A88A2AC3FEF10009B7D5 /* SwiftUI_ParkinSenseApp.swift */,
 				0DC3A88C2AC3FEF10009B7D5 /* ContentView.swift */,
 				250470D22AD365BC0053D8EF /* ProfilePage.swift */,
@@ -277,6 +280,7 @@
 			files = (
 				250470DF2AD371350053D8EF /* Timer2.swift in Sources */,
 				250470D32AD365BC0053D8EF /* ProfilePage.swift in Sources */,
+				0544F49F2ADDD945002CBBE8 /* ImgUpload.swift in Sources */,
 				250470D72AD366120053D8EF /* Login.swift in Sources */,
 				250470D52AD365FA0053D8EF /* SignUp.swift in Sources */,
 				0DC3A88D2AC3FEF10009B7D5 /* ContentView.swift in Sources */,
