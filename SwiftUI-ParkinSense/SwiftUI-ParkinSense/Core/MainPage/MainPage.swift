@@ -12,12 +12,13 @@ struct MainPage: View {
         NavigationView{
             ZStack{
                 ZStack{
-                   // MenuBar()
+                    MenuBar()
                     TestDiscription()
                     
                     
                     NavigationLink{
-                       //
+                        AVowelTest()
+                            .navigationBarBackButtonHidden()
                     } label: {
                         Text("Take Test")
                     }
