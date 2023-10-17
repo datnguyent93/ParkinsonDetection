@@ -43,6 +43,10 @@
 		256855822ADE8013006BC0F6 /* Tracing test3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256855812ADE8013006BC0F6 /* Tracing test3.swift */; };
 		256855852ADE80E6006BC0F6 /* ResultBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256855842ADE80E6006BC0F6 /* ResultBar.swift */; };
 		256855872ADE80F5006BC0F6 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256855862ADE80F5006BC0F6 /* Result.swift */; };
+		2568558D2ADE824F006BC0F6 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568558C2ADE824F006BC0F6 /* Notification.swift */; };
+		2568558F2ADE825D006BC0F6 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568558E2ADE825D006BC0F6 /* Settings.swift */; };
+		256855912ADE826B006BC0F6 /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256855902ADE826B006BC0F6 /* Information.swift */; };
+		256855932ADE827F006BC0F6 /* TestHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256855922ADE827F006BC0F6 /* TestHistory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +106,10 @@
 		256855812ADE8013006BC0F6 /* Tracing test3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tracing test3.swift"; sourceTree = "<group>"; };
 		256855842ADE80E6006BC0F6 /* ResultBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultBar.swift; sourceTree = "<group>"; };
 		256855862ADE80F5006BC0F6 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		2568558C2ADE824F006BC0F6 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		2568558E2ADE825D006BC0F6 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		256855902ADE826B006BC0F6 /* Information.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Information.swift; sourceTree = "<group>"; };
+		256855922ADE827F006BC0F6 /* TestHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHistory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +166,10 @@
 				256855522ADE7324006BC0F6 /* Vowels + Test */,
 				256855762ADE7E79006BC0F6 /* Image + Tracing */,
 				256855832ADE80A3006BC0F6 /* Result */,
+				256855882ADE81C5006BC0F6 /* Notfication */,
+				256855892ADE81F7006BC0F6 /* Setting */,
+				2568558A2ADE8205006BC0F6 /* Information */,
+				2568558B2ADE8219006BC0F6 /* Test History */,
 				0DC3A88E2AC3FEF30009B7D5 /* Assets.xcassets */,
 				0DC3A8902AC3FEF30009B7D5 /* Preview Content */,
 			);
@@ -350,6 +362,38 @@
 			path = Result;
 			sourceTree = "<group>";
 		};
+		256855882ADE81C5006BC0F6 /* Notfication */ = {
+			isa = PBXGroup;
+			children = (
+				2568558C2ADE824F006BC0F6 /* Notification.swift */,
+			);
+			path = Notfication;
+			sourceTree = "<group>";
+		};
+		256855892ADE81F7006BC0F6 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				2568558E2ADE825D006BC0F6 /* Settings.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		2568558A2ADE8205006BC0F6 /* Information */ = {
+			isa = PBXGroup;
+			children = (
+				256855902ADE826B006BC0F6 /* Information.swift */,
+			);
+			path = Information;
+			sourceTree = "<group>";
+		};
+		2568558B2ADE8219006BC0F6 /* Test History */ = {
+			isa = PBXGroup;
+			children = (
+				256855922ADE827F006BC0F6 /* TestHistory.swift */,
+			);
+			path = "Test History";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -481,6 +525,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				256855912ADE826B006BC0F6 /* Information.swift in Sources */,
 				256855852ADE80E6006BC0F6 /* ResultBar.swift in Sources */,
 				2568556E2ADE782F006BC0F6 /* RecordingsList.swift in Sources */,
 				256855822ADE8013006BC0F6 /* Tracing test3.swift in Sources */,
@@ -498,6 +543,7 @@
 				2568556A2ADE780F006BC0F6 /* Helper.swift in Sources */,
 				2568555A2ADE7688006BC0F6 /* EVowelTest.swift in Sources */,
 				256855562ADE75AB006BC0F6 /* PlaySound.swift in Sources */,
+				256855932ADE827F006BC0F6 /* TestHistory.swift in Sources */,
 				0DC3A88B2AC3FEF10009B7D5 /* SwiftUI_ParkinSenseApp.swift in Sources */,
 				256855622ADE77BD006BC0F6 /* AudioRecorder.swift in Sources */,
 				2568557E2ADE7FF9006BC0F6 /* Tracing test.swift in Sources */,
@@ -507,9 +553,11 @@
 				2568555C2ADE76C2006BC0F6 /* IVowelTest.swift in Sources */,
 				256855602ADE7727006BC0F6 /* UVowelTest.swift in Sources */,
 				250470D92AD3664D0053D8EF /* MainPage.swift in Sources */,
+				2568558F2ADE825D006BC0F6 /* Settings.swift in Sources */,
 				2568557A2ADE7F0A006BC0F6 /* SpiralPoints.swift in Sources */,
 				256855702ADE783E006BC0F6 /*  RecordingDataModel.swift in Sources */,
 				2568557C2ADE7F1A006BC0F6 /* SpiralView.swift in Sources */,
+				2568558D2ADE824F006BC0F6 /* Notification.swift in Sources */,
 				250470E12AD372420053D8EF /* AVowelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
