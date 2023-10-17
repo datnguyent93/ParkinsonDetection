@@ -36,6 +36,13 @@
 		256855702ADE783E006BC0F6 /*  RecordingDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568556F2ADE783E006BC0F6 /*  RecordingDataModel.swift */; };
 		256855722ADE7A68006BC0F6 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256855712ADE7A68006BC0F6 /* MenuBar.swift */; };
 		256855752ADE7B50006BC0F6 /* Vowel Sound in Resources */ = {isa = PBXBuildFile; fileRef = 256855742ADE7B50006BC0F6 /* Vowel Sound */; };
+		2568557A2ADE7F0A006BC0F6 /* SpiralPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256855792ADE7F0A006BC0F6 /* SpiralPoints.swift */; };
+		2568557C2ADE7F1A006BC0F6 /* SpiralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568557B2ADE7F1A006BC0F6 /* SpiralView.swift */; };
+		2568557E2ADE7FF9006BC0F6 /* Tracing test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568557D2ADE7FF9006BC0F6 /* Tracing test.swift */; };
+		256855802ADE8006006BC0F6 /* Tracing test2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568557F2ADE8006006BC0F6 /* Tracing test2.swift */; };
+		256855822ADE8013006BC0F6 /* Tracing test3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256855812ADE8013006BC0F6 /* Tracing test3.swift */; };
+		256855852ADE80E6006BC0F6 /* ResultBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256855842ADE80E6006BC0F6 /* ResultBar.swift */; };
+		256855872ADE80F5006BC0F6 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256855862ADE80F5006BC0F6 /* Result.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +95,13 @@
 		2568556F2ADE783E006BC0F6 /*  RecordingDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " RecordingDataModel.swift"; sourceTree = "<group>"; };
 		256855712ADE7A68006BC0F6 /* MenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
 		256855742ADE7B50006BC0F6 /* Vowel Sound */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Vowel Sound"; sourceTree = "<group>"; };
+		256855792ADE7F0A006BC0F6 /* SpiralPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiralPoints.swift; sourceTree = "<group>"; };
+		2568557B2ADE7F1A006BC0F6 /* SpiralView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiralView.swift; sourceTree = "<group>"; };
+		2568557D2ADE7FF9006BC0F6 /* Tracing test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tracing test.swift"; sourceTree = "<group>"; };
+		2568557F2ADE8006006BC0F6 /* Tracing test2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tracing test2.swift"; sourceTree = "<group>"; };
+		256855812ADE8013006BC0F6 /* Tracing test3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tracing test3.swift"; sourceTree = "<group>"; };
+		256855842ADE80E6006BC0F6 /* ResultBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultBar.swift; sourceTree = "<group>"; };
+		256855862ADE80F5006BC0F6 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +156,8 @@
 				2568554A2ADE70F1006BC0F6 /* Core */,
 				2568554E2ADE7187006BC0F6 /* Model */,
 				256855522ADE7324006BC0F6 /* Vowels + Test */,
+				256855762ADE7E79006BC0F6 /* Image + Tracing */,
+				256855832ADE80A3006BC0F6 /* Result */,
 				0DC3A88E2AC3FEF30009B7D5 /* Assets.xcassets */,
 				0DC3A8902AC3FEF30009B7D5 /* Preview Content */,
 			);
@@ -297,6 +313,43 @@
 			path = VowelSound;
 			sourceTree = "<group>";
 		};
+		256855762ADE7E79006BC0F6 /* Image + Tracing */ = {
+			isa = PBXGroup;
+			children = (
+				256855772ADE7EAF006BC0F6 /* OpenSource SpiralDoted IMG */,
+				256855782ADE7ED1006BC0F6 /* Tracing Test */,
+			);
+			path = "Image + Tracing";
+			sourceTree = "<group>";
+		};
+		256855772ADE7EAF006BC0F6 /* OpenSource SpiralDoted IMG */ = {
+			isa = PBXGroup;
+			children = (
+				256855792ADE7F0A006BC0F6 /* SpiralPoints.swift */,
+				2568557B2ADE7F1A006BC0F6 /* SpiralView.swift */,
+			);
+			path = "OpenSource SpiralDoted IMG";
+			sourceTree = "<group>";
+		};
+		256855782ADE7ED1006BC0F6 /* Tracing Test */ = {
+			isa = PBXGroup;
+			children = (
+				2568557D2ADE7FF9006BC0F6 /* Tracing test.swift */,
+				2568557F2ADE8006006BC0F6 /* Tracing test2.swift */,
+				256855812ADE8013006BC0F6 /* Tracing test3.swift */,
+			);
+			path = "Tracing Test";
+			sourceTree = "<group>";
+		};
+		256855832ADE80A3006BC0F6 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				256855842ADE80E6006BC0F6 /* ResultBar.swift */,
+				256855862ADE80F5006BC0F6 /* Result.swift */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -428,13 +481,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				256855852ADE80E6006BC0F6 /* ResultBar.swift in Sources */,
 				2568556E2ADE782F006BC0F6 /* RecordingsList.swift in Sources */,
+				256855822ADE8013006BC0F6 /* Tracing test3.swift in Sources */,
 				250470DF2AD371350053D8EF /* Timer2.swift in Sources */,
 				250470D32AD365BC0053D8EF /* ProfilePage.swift in Sources */,
 				256855662ADE77EA006BC0F6 /* RecordAndStop.swift in Sources */,
+				256855872ADE80F5006BC0F6 /* Result.swift in Sources */,
 				256855682ADE77FF006BC0F6 /* RecordAndStop2.swift in Sources */,
 				250470D72AD366120053D8EF /* Login.swift in Sources */,
 				250470D52AD365FA0053D8EF /* SignUp.swift in Sources */,
+				256855802ADE8006006BC0F6 /* Tracing test2.swift in Sources */,
 				2568555E2ADE7701006BC0F6 /* OVowelTest.swift in Sources */,
 				2568556C2ADE781D006BC0F6 /* AudioPlayer.swift in Sources */,
 				0DC3A88D2AC3FEF10009B7D5 /* ContentView.swift in Sources */,
@@ -443,13 +500,16 @@
 				256855562ADE75AB006BC0F6 /* PlaySound.swift in Sources */,
 				0DC3A88B2AC3FEF10009B7D5 /* SwiftUI_ParkinSenseApp.swift in Sources */,
 				256855622ADE77BD006BC0F6 /* AudioRecorder.swift in Sources */,
+				2568557E2ADE7FF9006BC0F6 /* Tracing test.swift in Sources */,
 				256855512ADE729B006BC0F6 /* Timer.swift in Sources */,
 				256855642ADE77DA006BC0F6 /* Extensions.swift in Sources */,
 				256855722ADE7A68006BC0F6 /* MenuBar.swift in Sources */,
 				2568555C2ADE76C2006BC0F6 /* IVowelTest.swift in Sources */,
 				256855602ADE7727006BC0F6 /* UVowelTest.swift in Sources */,
 				250470D92AD3664D0053D8EF /* MainPage.swift in Sources */,
+				2568557A2ADE7F0A006BC0F6 /* SpiralPoints.swift in Sources */,
 				256855702ADE783E006BC0F6 /*  RecordingDataModel.swift in Sources */,
+				2568557C2ADE7F1A006BC0F6 /* SpiralView.swift in Sources */,
 				250470E12AD372420053D8EF /* AVowelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
