@@ -344,3 +344,6 @@ iOSInjectionProject/
 
 # Other
 my_model.h5
+my_model.mlmodel
+resnet50.h5
+resnet50.mlmodel
