@@ -2,10 +2,8 @@
 //  SignUp.swift
 //  SwiftUI-ParkinSense
 //
-//  Created by Emnet Alemayehu on 10/8/23.
+//  Created by Emnet.A on 10/8/23.
 //
-
-import SwiftUI
 
 import SwiftUI
 
@@ -18,8 +16,8 @@ struct SignUp: View {
     @State private var showingLoginScreen = false
     
     var body: some View {
-        
-            ZStack {
+        NavigationView{
+            ZStack(alignment: .center) {
                 Color.blue
                     .ignoresSafeArea()
                 Circle()
@@ -71,25 +69,26 @@ struct SignUp: View {
                             .cornerRadius(10)
                         // .border(.red, width:<#T##CGFloat#>(wrongusername))
                     }//.position(x:630, y:-270)
-                    Button ("Create Profile"){
+//
+                    NavigationLink{
+                        MainPage()
+                            .navigationBarBackButtonHidden()
+                    } label: {
+                        Text("Creat Profile")
                         
-                        //Action
-                            //Authenticate user
-                        
-                    }
-                    .foregroundColor(.white)
-                    .frame(width: 300, height: 50)
-                    .font(.title)
-                    .bold()
-                    .background(Color.purple)
-                    .cornerRadius(40)
-                    //.position(x:730, y:-420)
-                    
+                    }.foregroundColor(.white)
+                        .font(.title)
+                        .bold()
+                        .frame(width: 300, height: 50)
+                        .background(Color.purple)
+                        .cornerRadius(40)
+                      
                     
                 }//.position(x:670, y:790)
                     
             }
         
+    }.navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
@@ -97,4 +96,5 @@ struct SignUp: View {
 #Preview {
     SignUp()
 }
+
 

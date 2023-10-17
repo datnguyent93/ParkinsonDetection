@@ -20,6 +20,7 @@
 		250470D92AD3664D0053D8EF /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250470D82AD3664D0053D8EF /* MainPage.swift */; };
 		250470DF2AD371350053D8EF /* Timer2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250470DE2AD371350053D8EF /* Timer2.swift */; };
 		250470E12AD372420053D8EF /* TestVowel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250470E02AD372420053D8EF /* TestVowel.swift */; };
+		256855512ADE729B006BC0F6 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256855502ADE729B006BC0F6 /* Timer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		250470D82AD3664D0053D8EF /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
 		250470DE2AD371350053D8EF /* Timer2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer2.swift; sourceTree = "<group>"; };
 		250470E02AD372420053D8EF /* TestVowel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVowel.swift; sourceTree = "<group>"; };
+		256855502ADE729B006BC0F6 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,14 +108,10 @@
 		0DC3A8892AC3FEF10009B7D5 /* SwiftUI-ParkinSense */ = {
 			isa = PBXGroup;
 			children = (
-				0DC3A88A2AC3FEF10009B7D5 /* SwiftUI_ParkinSenseApp.swift */,
-				0DC3A88C2AC3FEF10009B7D5 /* ContentView.swift */,
-				250470D22AD365BC0053D8EF /* ProfilePage.swift */,
-				250470D42AD365FA0053D8EF /* SignUp.swift */,
-				250470D62AD366120053D8EF /* Login.swift */,
-				250470D82AD3664D0053D8EF /* MainPage.swift */,
-				250470DE2AD371350053D8EF /* Timer2.swift */,
-				250470E02AD372420053D8EF /* TestVowel.swift */,
+				256855492ADE70CD006BC0F6 /* App */,
+				2568554A2ADE70F1006BC0F6 /* Core */,
+				2568554E2ADE7187006BC0F6 /* Model */,
+				256855522ADE7324006BC0F6 /* Vowels + Test */,
 				0DC3A88E2AC3FEF30009B7D5 /* Assets.xcassets */,
 				0DC3A8902AC3FEF30009B7D5 /* Preview Content */,
 			);
@@ -143,6 +141,75 @@
 				0DC3A8A72AC3FEF30009B7D5 /* SwiftUI_ParkinSenseUITestsLaunchTests.swift */,
 			);
 			path = "SwiftUI-ParkinSenseUITests";
+			sourceTree = "<group>";
+		};
+		256855492ADE70CD006BC0F6 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0DC3A88A2AC3FEF10009B7D5 /* SwiftUI_ParkinSenseApp.swift */,
+				0DC3A88C2AC3FEF10009B7D5 /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2568554A2ADE70F1006BC0F6 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2568554B2ADE7107006BC0F6 /* Athentication */,
+				2568554C2ADE7121006BC0F6 /* Profile */,
+				2568554D2ADE7151006BC0F6 /* MainPage */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2568554B2ADE7107006BC0F6 /* Athentication */ = {
+			isa = PBXGroup;
+			children = (
+				250470D62AD366120053D8EF /* Login.swift */,
+				250470D42AD365FA0053D8EF /* SignUp.swift */,
+			);
+			path = Athentication;
+			sourceTree = "<group>";
+		};
+		2568554C2ADE7121006BC0F6 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				250470D22AD365BC0053D8EF /* ProfilePage.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		2568554D2ADE7151006BC0F6 /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+				250470D82AD3664D0053D8EF /* MainPage.swift */,
+			);
+			path = MainPage;
+			sourceTree = "<group>";
+		};
+		2568554E2ADE7187006BC0F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2568554F2ADE727F006BC0F6 /* OpenSourceTimer */,
+				250470DE2AD371350053D8EF /* Timer2.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2568554F2ADE727F006BC0F6 /* OpenSourceTimer */ = {
+			isa = PBXGroup;
+			children = (
+				256855502ADE729B006BC0F6 /* Timer.swift */,
+			);
+			path = OpenSourceTimer;
+			sourceTree = "<group>";
+		};
+		256855522ADE7324006BC0F6 /* Vowels + Test */ = {
+			isa = PBXGroup;
+			children = (
+				250470E02AD372420053D8EF /* TestVowel.swift */,
+			);
+			path = "Vowels + Test";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,6 +348,7 @@
 				250470D52AD365FA0053D8EF /* SignUp.swift in Sources */,
 				0DC3A88D2AC3FEF10009B7D5 /* ContentView.swift in Sources */,
 				0DC3A88B2AC3FEF10009B7D5 /* SwiftUI_ParkinSenseApp.swift in Sources */,
+				256855512ADE729B006BC0F6 /* Timer.swift in Sources */,
 				250470D92AD3664D0053D8EF /* MainPage.swift in Sources */,
 				250470E12AD372420053D8EF /* TestVowel.swift in Sources */,
 			);

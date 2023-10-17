@@ -15,20 +15,22 @@ struct ContentView: View {
                     Image("Logo")
                         .resizable()
                     
-                        Button("Tap to continue"){
-                            NavigationLink(destination: ProfilePage()){
-                                
-                        }
-                        
+                    NavigationLink{
+                        //ProfilePage()
+                        Login()
+                            .navigationBarBackButtonHidden()
+                    } label: {
+                        Text("Tap toContinue")
                     }.foregroundColor(.white)
                         .font(.title)
                         .bold()
                         .frame(width: 300, height: 50)
                         .background(Color.purple)
                         .cornerRadius(40)
+                    
                 }
-                
             }
+            
         }.navigationViewStyle(StackNavigationViewStyle())
     }
 }
@@ -38,4 +40,5 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
+
 

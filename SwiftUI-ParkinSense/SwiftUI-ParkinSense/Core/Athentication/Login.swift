@@ -2,7 +2,7 @@
 //  Login.swift
 //  SwiftUI-ParkinSense
 //
-//  Created by Emnet Alemayehu on 10/8/23.
+//  Created by Emnet.A on 10/8/23.
 //
 
 import SwiftUI
@@ -15,8 +15,8 @@ struct Login: View {
     @State private var showingLoginScreen = false
     
     var body: some View {
-        
-            ZStack {
+        NavigationView{
+            ZStack(alignment: .center) {
                 Color.blue
                     .ignoresSafeArea()
                 Circle()
@@ -27,7 +27,7 @@ struct Login: View {
                     .foregroundColor(.white)
                 
                 VStack{
-                  
+                    
                     Text("Login")
                         .font(.largeTitle)
                         .bold()
@@ -43,7 +43,7 @@ struct Login: View {
                             .frame(width: 300, height: 50)
                             .background(Color.black.opacity(0.05))
                             .cornerRadius(10)
-                        // .border(.red, width:<#T##CGFloat#>(wrongusername))
+                            //.border(.red, width:<#T##CGFloat#>(wrongusername))
                     }//.position(x:620, y:30)
                     HStack{
                         Text("Password")
@@ -54,27 +54,35 @@ struct Login: View {
                             .frame(width: 300, height: 50)
                             .background(Color.black.opacity(0.05))
                             .cornerRadius(10)
-                        // .border(.red, width:<#T##CGFloat#>(wrongusername))
+                            //.border(.red, width:<#T##CGFloat#>(wrongpassword))
                     }//.position(x:630, y:-200)
-                    Button ("Continue"){
+                   
+//
+                    NavigationLink{
+                        MainPage()
+                            .navigationBarBackButtonHidden()
+                    } label: {
+                        Text("Continue")
+                    }.foregroundColor(.white)
+                        .font(.title)
+                        .bold()
+                        .frame(width: 300, height: 50)
+                        .background(Color.purple)
+                        .cornerRadius(40)
                         
-                        //Action
-                            //Authenticate user
-                        
+                    NavigationLink{
+                        SignUp()
+                            .navigationBarBackButtonHidden()
+                    } label: {
+                        Text("First time user? SignUp")
                     }
-                    .foregroundColor(.white)
-                    .frame(width: 300, height: 50)
-                    .font(.title)
-                    .bold()
-                    .background(Color.purple)
-                    .cornerRadius(40)
-                    //.position(x:730, y:-420)
+                
                     
-                    
-                }//.position(x:670, y:790)
+                }
                     
             }
-        
+            
+        }.navigationViewStyle(StackNavigationViewStyle())
     }
 }
 #Preview {

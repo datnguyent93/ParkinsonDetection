@@ -2,7 +2,7 @@
 //  Timer2.swift
 //  SwiftUI-ParkinSense
 //
-//  Created by Emnet Alemayehu on 10/8/23.
+//  Created by Emnet.A on 10/8/23.
 //
 
 import SwiftUI
