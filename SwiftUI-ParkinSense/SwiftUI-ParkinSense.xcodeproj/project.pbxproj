@@ -19,7 +19,34 @@
 		250470D72AD366120053D8EF /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250470D62AD366120053D8EF /* Login.swift */; };
 		250470D92AD3664D0053D8EF /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250470D82AD3664D0053D8EF /* MainPage.swift */; };
 		250470DF2AD371350053D8EF /* Timer2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250470DE2AD371350053D8EF /* Timer2.swift */; };
-		250470E12AD372420053D8EF /* TestVowel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250470E02AD372420053D8EF /* TestVowel.swift */; };
+		250470E12AD372420053D8EF /* AVowelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250470E02AD372420053D8EF /* AVowelTest.swift */; };
+		256855512ADE729B006BC0F6 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256855502ADE729B006BC0F6 /* Timer.swift */; };
+		256855562ADE75AB006BC0F6 /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256855552ADE75AB006BC0F6 /* PlaySound.swift */; };
+		2568555A2ADE7688006BC0F6 /* EVowelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256855592ADE7688006BC0F6 /* EVowelTest.swift */; };
+		2568555C2ADE76C2006BC0F6 /* IVowelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568555B2ADE76C2006BC0F6 /* IVowelTest.swift */; };
+		2568555E2ADE7701006BC0F6 /* OVowelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568555D2ADE7701006BC0F6 /* OVowelTest.swift */; };
+		256855602ADE7727006BC0F6 /* UVowelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568555F2ADE7727006BC0F6 /* UVowelTest.swift */; };
+		256855622ADE77BD006BC0F6 /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256855612ADE77BD006BC0F6 /* AudioRecorder.swift */; };
+		256855642ADE77DA006BC0F6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256855632ADE77DA006BC0F6 /* Extensions.swift */; };
+		256855662ADE77EA006BC0F6 /* RecordAndStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256855652ADE77EA006BC0F6 /* RecordAndStop.swift */; };
+		256855682ADE77FF006BC0F6 /* RecordAndStop2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256855672ADE77FF006BC0F6 /* RecordAndStop2.swift */; };
+		2568556A2ADE780F006BC0F6 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256855692ADE780F006BC0F6 /* Helper.swift */; };
+		2568556C2ADE781D006BC0F6 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568556B2ADE781D006BC0F6 /* AudioPlayer.swift */; };
+		2568556E2ADE782F006BC0F6 /* RecordingsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568556D2ADE782F006BC0F6 /* RecordingsList.swift */; };
+		256855702ADE783E006BC0F6 /*  RecordingDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568556F2ADE783E006BC0F6 /*  RecordingDataModel.swift */; };
+		256855722ADE7A68006BC0F6 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256855712ADE7A68006BC0F6 /* MenuBar.swift */; };
+		256855752ADE7B50006BC0F6 /* Vowel Sound in Resources */ = {isa = PBXBuildFile; fileRef = 256855742ADE7B50006BC0F6 /* Vowel Sound */; };
+		2568557A2ADE7F0A006BC0F6 /* SpiralPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256855792ADE7F0A006BC0F6 /* SpiralPoints.swift */; };
+		2568557C2ADE7F1A006BC0F6 /* SpiralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568557B2ADE7F1A006BC0F6 /* SpiralView.swift */; };
+		2568557E2ADE7FF9006BC0F6 /* Tracing test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568557D2ADE7FF9006BC0F6 /* Tracing test.swift */; };
+		256855802ADE8006006BC0F6 /* Tracing test2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568557F2ADE8006006BC0F6 /* Tracing test2.swift */; };
+		256855822ADE8013006BC0F6 /* Tracing test3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256855812ADE8013006BC0F6 /* Tracing test3.swift */; };
+		256855852ADE80E6006BC0F6 /* ResultBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256855842ADE80E6006BC0F6 /* ResultBar.swift */; };
+		256855872ADE80F5006BC0F6 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256855862ADE80F5006BC0F6 /* Result.swift */; };
+		2568558D2ADE824F006BC0F6 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568558C2ADE824F006BC0F6 /* Notification.swift */; };
+		2568558F2ADE825D006BC0F6 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568558E2ADE825D006BC0F6 /* Settings.swift */; };
+		256855912ADE826B006BC0F6 /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256855902ADE826B006BC0F6 /* Information.swift */; };
+		256855932ADE827F006BC0F6 /* TestHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256855922ADE827F006BC0F6 /* TestHistory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +82,34 @@
 		250470D62AD366120053D8EF /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		250470D82AD3664D0053D8EF /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
 		250470DE2AD371350053D8EF /* Timer2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer2.swift; sourceTree = "<group>"; };
-		250470E02AD372420053D8EF /* TestVowel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVowel.swift; sourceTree = "<group>"; };
+		250470E02AD372420053D8EF /* AVowelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVowelTest.swift; sourceTree = "<group>"; };
+		256855502ADE729B006BC0F6 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		256855552ADE75AB006BC0F6 /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
+		256855592ADE7688006BC0F6 /* EVowelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EVowelTest.swift; sourceTree = "<group>"; };
+		2568555B2ADE76C2006BC0F6 /* IVowelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IVowelTest.swift; sourceTree = "<group>"; };
+		2568555D2ADE7701006BC0F6 /* OVowelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OVowelTest.swift; sourceTree = "<group>"; };
+		2568555F2ADE7727006BC0F6 /* UVowelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UVowelTest.swift; sourceTree = "<group>"; };
+		256855612ADE77BD006BC0F6 /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
+		256855632ADE77DA006BC0F6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		256855652ADE77EA006BC0F6 /* RecordAndStop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordAndStop.swift; sourceTree = "<group>"; };
+		256855672ADE77FF006BC0F6 /* RecordAndStop2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordAndStop2.swift; sourceTree = "<group>"; };
+		256855692ADE780F006BC0F6 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		2568556B2ADE781D006BC0F6 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		2568556D2ADE782F006BC0F6 /* RecordingsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingsList.swift; sourceTree = "<group>"; };
+		2568556F2ADE783E006BC0F6 /*  RecordingDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " RecordingDataModel.swift"; sourceTree = "<group>"; };
+		256855712ADE7A68006BC0F6 /* MenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
+		256855742ADE7B50006BC0F6 /* Vowel Sound */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Vowel Sound"; sourceTree = "<group>"; };
+		256855792ADE7F0A006BC0F6 /* SpiralPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiralPoints.swift; sourceTree = "<group>"; };
+		2568557B2ADE7F1A006BC0F6 /* SpiralView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiralView.swift; sourceTree = "<group>"; };
+		2568557D2ADE7FF9006BC0F6 /* Tracing test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tracing test.swift"; sourceTree = "<group>"; };
+		2568557F2ADE8006006BC0F6 /* Tracing test2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tracing test2.swift"; sourceTree = "<group>"; };
+		256855812ADE8013006BC0F6 /* Tracing test3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tracing test3.swift"; sourceTree = "<group>"; };
+		256855842ADE80E6006BC0F6 /* ResultBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultBar.swift; sourceTree = "<group>"; };
+		256855862ADE80F5006BC0F6 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		2568558C2ADE824F006BC0F6 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		2568558E2ADE825D006BC0F6 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		256855902ADE826B006BC0F6 /* Information.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Information.swift; sourceTree = "<group>"; };
+		256855922ADE827F006BC0F6 /* TestHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHistory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,14 +160,16 @@
 		0DC3A8892AC3FEF10009B7D5 /* SwiftUI-ParkinSense */ = {
 			isa = PBXGroup;
 			children = (
-				0DC3A88A2AC3FEF10009B7D5 /* SwiftUI_ParkinSenseApp.swift */,
-				0DC3A88C2AC3FEF10009B7D5 /* ContentView.swift */,
-				250470D22AD365BC0053D8EF /* ProfilePage.swift */,
-				250470D42AD365FA0053D8EF /* SignUp.swift */,
-				250470D62AD366120053D8EF /* Login.swift */,
-				250470D82AD3664D0053D8EF /* MainPage.swift */,
-				250470DE2AD371350053D8EF /* Timer2.swift */,
-				250470E02AD372420053D8EF /* TestVowel.swift */,
+				256855492ADE70CD006BC0F6 /* App */,
+				2568554A2ADE70F1006BC0F6 /* Core */,
+				2568554E2ADE7187006BC0F6 /* Model */,
+				256855522ADE7324006BC0F6 /* Vowels + Test */,
+				256855762ADE7E79006BC0F6 /* Image + Tracing */,
+				256855832ADE80A3006BC0F6 /* Result */,
+				256855882ADE81C5006BC0F6 /* Notfication */,
+				256855892ADE81F7006BC0F6 /* Setting */,
+				2568558A2ADE8205006BC0F6 /* Information */,
+				2568558B2ADE8219006BC0F6 /* Test History */,
 				0DC3A88E2AC3FEF30009B7D5 /* Assets.xcassets */,
 				0DC3A8902AC3FEF30009B7D5 /* Preview Content */,
 			);
@@ -143,6 +199,199 @@
 				0DC3A8A72AC3FEF30009B7D5 /* SwiftUI_ParkinSenseUITestsLaunchTests.swift */,
 			);
 			path = "SwiftUI-ParkinSenseUITests";
+			sourceTree = "<group>";
+		};
+		256855492ADE70CD006BC0F6 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0DC3A88A2AC3FEF10009B7D5 /* SwiftUI_ParkinSenseApp.swift */,
+				0DC3A88C2AC3FEF10009B7D5 /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2568554A2ADE70F1006BC0F6 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2568554B2ADE7107006BC0F6 /* Athentication */,
+				2568554C2ADE7121006BC0F6 /* Profile */,
+				2568554D2ADE7151006BC0F6 /* MainPage */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2568554B2ADE7107006BC0F6 /* Athentication */ = {
+			isa = PBXGroup;
+			children = (
+				250470D62AD366120053D8EF /* Login.swift */,
+				250470D42AD365FA0053D8EF /* SignUp.swift */,
+			);
+			path = Athentication;
+			sourceTree = "<group>";
+		};
+		2568554C2ADE7121006BC0F6 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				250470D22AD365BC0053D8EF /* ProfilePage.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		2568554D2ADE7151006BC0F6 /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+				250470D82AD3664D0053D8EF /* MainPage.swift */,
+				256855712ADE7A68006BC0F6 /* MenuBar.swift */,
+			);
+			path = MainPage;
+			sourceTree = "<group>";
+		};
+		2568554E2ADE7187006BC0F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2568554F2ADE727F006BC0F6 /* OpenSourceTimer */,
+				250470DE2AD371350053D8EF /* Timer2.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2568554F2ADE727F006BC0F6 /* OpenSourceTimer */ = {
+			isa = PBXGroup;
+			children = (
+				256855502ADE729B006BC0F6 /* Timer.swift */,
+			);
+			path = OpenSourceTimer;
+			sourceTree = "<group>";
+		};
+		256855522ADE7324006BC0F6 /* Vowels + Test */ = {
+			isa = PBXGroup;
+			children = (
+				256855532ADE7568006BC0F6 /* Vowel Sound */,
+			);
+			path = "Vowels + Test";
+			sourceTree = "<group>";
+		};
+		256855532ADE7568006BC0F6 /* Vowel Sound */ = {
+			isa = PBXGroup;
+			children = (
+				256855572ADE75D4006BC0F6 /* OpenSourceRecordSound */,
+				256855732ADE7B1C006BC0F6 /* VowelSound */,
+				256855542ADE7586006BC0F6 /* PlaySound */,
+				256855582ADE75F1006BC0F6 /* Test */,
+			);
+			path = "Vowel Sound";
+			sourceTree = "<group>";
+		};
+		256855542ADE7586006BC0F6 /* PlaySound */ = {
+			isa = PBXGroup;
+			children = (
+				256855552ADE75AB006BC0F6 /* PlaySound.swift */,
+			);
+			path = PlaySound;
+			sourceTree = "<group>";
+		};
+		256855572ADE75D4006BC0F6 /* OpenSourceRecordSound */ = {
+			isa = PBXGroup;
+			children = (
+				256855612ADE77BD006BC0F6 /* AudioRecorder.swift */,
+				256855632ADE77DA006BC0F6 /* Extensions.swift */,
+				256855652ADE77EA006BC0F6 /* RecordAndStop.swift */,
+				256855672ADE77FF006BC0F6 /* RecordAndStop2.swift */,
+				256855692ADE780F006BC0F6 /* Helper.swift */,
+				2568556B2ADE781D006BC0F6 /* AudioPlayer.swift */,
+				2568556D2ADE782F006BC0F6 /* RecordingsList.swift */,
+				2568556F2ADE783E006BC0F6 /*  RecordingDataModel.swift */,
+			);
+			path = OpenSourceRecordSound;
+			sourceTree = "<group>";
+		};
+		256855582ADE75F1006BC0F6 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				250470E02AD372420053D8EF /* AVowelTest.swift */,
+				256855592ADE7688006BC0F6 /* EVowelTest.swift */,
+				2568555B2ADE76C2006BC0F6 /* IVowelTest.swift */,
+				2568555D2ADE7701006BC0F6 /* OVowelTest.swift */,
+				2568555F2ADE7727006BC0F6 /* UVowelTest.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		256855732ADE7B1C006BC0F6 /* VowelSound */ = {
+			isa = PBXGroup;
+			children = (
+				256855742ADE7B50006BC0F6 /* Vowel Sound */,
+			);
+			path = VowelSound;
+			sourceTree = "<group>";
+		};
+		256855762ADE7E79006BC0F6 /* Image + Tracing */ = {
+			isa = PBXGroup;
+			children = (
+				256855772ADE7EAF006BC0F6 /* OpenSource SpiralDoted IMG */,
+				256855782ADE7ED1006BC0F6 /* Tracing Test */,
+			);
+			path = "Image + Tracing";
+			sourceTree = "<group>";
+		};
+		256855772ADE7EAF006BC0F6 /* OpenSource SpiralDoted IMG */ = {
+			isa = PBXGroup;
+			children = (
+				256855792ADE7F0A006BC0F6 /* SpiralPoints.swift */,
+				2568557B2ADE7F1A006BC0F6 /* SpiralView.swift */,
+			);
+			path = "OpenSource SpiralDoted IMG";
+			sourceTree = "<group>";
+		};
+		256855782ADE7ED1006BC0F6 /* Tracing Test */ = {
+			isa = PBXGroup;
+			children = (
+				2568557D2ADE7FF9006BC0F6 /* Tracing test.swift */,
+				2568557F2ADE8006006BC0F6 /* Tracing test2.swift */,
+				256855812ADE8013006BC0F6 /* Tracing test3.swift */,
+			);
+			path = "Tracing Test";
+			sourceTree = "<group>";
+		};
+		256855832ADE80A3006BC0F6 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				256855842ADE80E6006BC0F6 /* ResultBar.swift */,
+				256855862ADE80F5006BC0F6 /* Result.swift */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		256855882ADE81C5006BC0F6 /* Notfication */ = {
+			isa = PBXGroup;
+			children = (
+				2568558C2ADE824F006BC0F6 /* Notification.swift */,
+			);
+			path = Notfication;
+			sourceTree = "<group>";
+		};
+		256855892ADE81F7006BC0F6 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				2568558E2ADE825D006BC0F6 /* Settings.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		2568558A2ADE8205006BC0F6 /* Information */ = {
+			isa = PBXGroup;
+			children = (
+				256855902ADE826B006BC0F6 /* Information.swift */,
+			);
+			path = Information;
+			sourceTree = "<group>";
+		};
+		2568558B2ADE8219006BC0F6 /* Test History */ = {
+			isa = PBXGroup;
+			children = (
+				256855922ADE827F006BC0F6 /* TestHistory.swift */,
+			);
+			path = "Test History";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +499,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DC3A8922AC3FEF30009B7D5 /* Preview Assets.xcassets in Resources */,
+				256855752ADE7B50006BC0F6 /* Vowel Sound in Resources */,
 				0DC3A88F2AC3FEF30009B7D5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,14 +525,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				256855912ADE826B006BC0F6 /* Information.swift in Sources */,
+				256855852ADE80E6006BC0F6 /* ResultBar.swift in Sources */,
+				2568556E2ADE782F006BC0F6 /* RecordingsList.swift in Sources */,
+				256855822ADE8013006BC0F6 /* Tracing test3.swift in Sources */,
 				250470DF2AD371350053D8EF /* Timer2.swift in Sources */,
 				250470D32AD365BC0053D8EF /* ProfilePage.swift in Sources */,
+				256855662ADE77EA006BC0F6 /* RecordAndStop.swift in Sources */,
+				256855872ADE80F5006BC0F6 /* Result.swift in Sources */,
+				256855682ADE77FF006BC0F6 /* RecordAndStop2.swift in Sources */,
 				250470D72AD366120053D8EF /* Login.swift in Sources */,
 				250470D52AD365FA0053D8EF /* SignUp.swift in Sources */,
+				256855802ADE8006006BC0F6 /* Tracing test2.swift in Sources */,
+				2568555E2ADE7701006BC0F6 /* OVowelTest.swift in Sources */,
+				2568556C2ADE781D006BC0F6 /* AudioPlayer.swift in Sources */,
 				0DC3A88D2AC3FEF10009B7D5 /* ContentView.swift in Sources */,
+				2568556A2ADE780F006BC0F6 /* Helper.swift in Sources */,
+				2568555A2ADE7688006BC0F6 /* EVowelTest.swift in Sources */,
+				256855562ADE75AB006BC0F6 /* PlaySound.swift in Sources */,
+				256855932ADE827F006BC0F6 /* TestHistory.swift in Sources */,
 				0DC3A88B2AC3FEF10009B7D5 /* SwiftUI_ParkinSenseApp.swift in Sources */,
+				256855622ADE77BD006BC0F6 /* AudioRecorder.swift in Sources */,
+				2568557E2ADE7FF9006BC0F6 /* Tracing test.swift in Sources */,
+				256855512ADE729B006BC0F6 /* Timer.swift in Sources */,
+				256855642ADE77DA006BC0F6 /* Extensions.swift in Sources */,
+				256855722ADE7A68006BC0F6 /* MenuBar.swift in Sources */,
+				2568555C2ADE76C2006BC0F6 /* IVowelTest.swift in Sources */,
+				256855602ADE7727006BC0F6 /* UVowelTest.swift in Sources */,
 				250470D92AD3664D0053D8EF /* MainPage.swift in Sources */,
-				250470E12AD372420053D8EF /* TestVowel.swift in Sources */,
+				2568558F2ADE825D006BC0F6 /* Settings.swift in Sources */,
+				2568557A2ADE7F0A006BC0F6 /* SpiralPoints.swift in Sources */,
+				256855702ADE783E006BC0F6 /*  RecordingDataModel.swift in Sources */,
+				2568557C2ADE7F1A006BC0F6 /* SpiralView.swift in Sources */,
+				2568558D2ADE824F006BC0F6 /* Notification.swift in Sources */,
+				250470E12AD372420053D8EF /* AVowelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
