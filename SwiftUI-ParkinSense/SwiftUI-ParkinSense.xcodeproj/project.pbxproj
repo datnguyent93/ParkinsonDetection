@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D0653762AE238870062BA7F /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0D0653752AE238870062BA7F /* PythonKit */; };
+		0D0653782AE23A6D0062BA7F /* python-stdlib in Resources */ = {isa = PBXBuildFile; fileRef = 0D0653772AE23A6D0062BA7F /* python-stdlib */; };
+		0D06537A2AE23A780062BA7F /* Python.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D0653792AE23A780062BA7F /* Python.xcframework */; };
+		0D06537D2AE23BFD0062BA7F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D06537C2AE23BFD0062BA7F /* SystemConfiguration.framework */; };
+		0D06537F2AE244F90062BA7F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3A88C2AC3FEF10009B7D5 /* ContentView.swift */; };
 		0DC3A88B2AC3FEF10009B7D5 /* SwiftUI_ParkinSenseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3A88A2AC3FEF10009B7D5 /* SwiftUI_ParkinSenseApp.swift */; };
-		0DC3A88D2AC3FEF10009B7D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3A88C2AC3FEF10009B7D5 /* ContentView.swift */; };
 		0DC3A88F2AC3FEF30009B7D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DC3A88E2AC3FEF30009B7D5 /* Assets.xcassets */; };
 		0DC3A8922AC3FEF30009B7D5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DC3A8912AC3FEF30009B7D5 /* Preview Assets.xcassets */; };
 		0DC3A89C2AC3FEF30009B7D5 /* SwiftUI_ParkinSenseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3A89B2AC3FEF30009B7D5 /* SwiftUI_ParkinSenseTests.swift */; };
@@ -67,6 +71,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D0653772AE23A6D0062BA7F /* python-stdlib */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "python-stdlib"; path = "../../Python-3.10-iOS-support.b8/python-stdlib"; sourceTree = "<group>"; };
+		0D0653792AE23A780062BA7F /* Python.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Python.xcframework; path = "../../Python-3.10-iOS-support.b8/Python.xcframework"; sourceTree = "<group>"; };
+		0D06537C2AE23BFD0062BA7F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		0DC3A8872AC3FEF10009B7D5 /* SwiftUI-ParkinSense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-ParkinSense.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DC3A88A2AC3FEF10009B7D5 /* SwiftUI_ParkinSenseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ParkinSenseApp.swift; sourceTree = "<group>"; };
 		0DC3A88C2AC3FEF10009B7D5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -117,6 +124,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D0653762AE238870062BA7F /* PythonKit in Frameworks */,
+				0D06537D2AE23BFD0062BA7F /* SystemConfiguration.framework in Frameworks */,
+				0D06537A2AE23A780062BA7F /* Python.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,13 +147,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D06537B2AE23BFD0062BA7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D06537C2AE23BFD0062BA7F /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		0DC3A87E2AC3FEF10009B7D5 = {
 			isa = PBXGroup;
 			children = (
+				0D0653792AE23A780062BA7F /* Python.xcframework */,
+				0D0653772AE23A6D0062BA7F /* python-stdlib */,
 				0DC3A8892AC3FEF10009B7D5 /* SwiftUI-ParkinSense */,
 				0DC3A89A2AC3FEF30009B7D5 /* SwiftUI-ParkinSenseTests */,
 				0DC3A8A42AC3FEF30009B7D5 /* SwiftUI-ParkinSenseUITests */,
 				0DC3A8882AC3FEF10009B7D5 /* Products */,
+				0D06537B2AE23BFD0062BA7F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -410,6 +431,9 @@
 			dependencies = (
 			);
 			name = "SwiftUI-ParkinSense";
+			packageProductDependencies = (
+				0D0653752AE238870062BA7F /* PythonKit */,
+			);
 			productName = "SwiftUI-ParkinSense";
 			productReference = 0DC3A8872AC3FEF10009B7D5 /* SwiftUI-ParkinSense.app */;
 			productType = "com.apple.product-type.application";
@@ -482,6 +506,9 @@
 				Base,
 			);
 			mainGroup = 0DC3A87E2AC3FEF10009B7D5;
+			packageReferences = (
+				0D0653742AE238870062BA7F /* XCRemoteSwiftPackageReference "PythonKit" */,
+			);
 			productRefGroup = 0DC3A8882AC3FEF10009B7D5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -500,6 +527,7 @@
 			files = (
 				0DC3A8922AC3FEF30009B7D5 /* Preview Assets.xcassets in Resources */,
 				256855752ADE7B50006BC0F6 /* Vowel Sound in Resources */,
+				0D0653782AE23A6D0062BA7F /* python-stdlib in Resources */,
 				0DC3A88F2AC3FEF30009B7D5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -539,7 +567,6 @@
 				256855802ADE8006006BC0F6 /* Tracing test2.swift in Sources */,
 				2568555E2ADE7701006BC0F6 /* OVowelTest.swift in Sources */,
 				2568556C2ADE781D006BC0F6 /* AudioPlayer.swift in Sources */,
-				0DC3A88D2AC3FEF10009B7D5 /* ContentView.swift in Sources */,
 				2568556A2ADE780F006BC0F6 /* Helper.swift in Sources */,
 				2568555A2ADE7688006BC0F6 /* EVowelTest.swift in Sources */,
 				256855562ADE75AB006BC0F6 /* PlaySound.swift in Sources */,
@@ -550,6 +577,7 @@
 				256855512ADE729B006BC0F6 /* Timer.swift in Sources */,
 				256855642ADE77DA006BC0F6 /* Extensions.swift in Sources */,
 				256855722ADE7A68006BC0F6 /* MenuBar.swift in Sources */,
+				0D06537F2AE244F90062BA7F /* ContentView.swift in Sources */,
 				2568555C2ADE76C2006BC0F6 /* IVowelTest.swift in Sources */,
 				256855602ADE7727006BC0F6 /* UVowelTest.swift in Sources */,
 				250470D92AD3664D0053D8EF /* MainPage.swift in Sources */,
@@ -882,6 +910,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0D0653742AE238870062BA7F /* XCRemoteSwiftPackageReference "PythonKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pvieito/PythonKit.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0D0653752AE238870062BA7F /* PythonKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0D0653742AE238870062BA7F /* XCRemoteSwiftPackageReference "PythonKit" */;
+			productName = PythonKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0DC3A87F2AC3FEF10009B7D5 /* Project object */;
 }
