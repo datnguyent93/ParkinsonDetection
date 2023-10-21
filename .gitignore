@@ -347,3 +347,7 @@ my_model.h5
 my_model.mlmodel
 resnet50.h5
 resnet50.mlmodel
+code/PredictionModel/Archieved/*
+code/PredictionModel/Data/*
+code/PredictionModel/drawings/*
+code/PredictionModel/speech/*
