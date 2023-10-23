@@ -1,52 +1,63 @@
 //
 //  ContentView2.swift
-//  
+//
 //
 
 
+// our modification
+// changes recording from manual to automatic
 import SwiftUI
 
 struct RecordAndStop: View {
-    
     @ObservedObject var audioRecorder: AudioRecorder
-    
+    @State var finished = false
     var body: some View {
-        NavigationView {
-            VStack {
-               // RecordingsList(audioRecorder: audioRecorder)
-                Spacer()
+        VStack{
+            if (finished == false) {
                 if audioRecorder.recording == false {
-                    Button(action: {self.audioRecorder.startRecording()}) {
-                        Image(systemName: "mic.fill")
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width: 50, height: 70)
-                            .clipped()
-                            .foregroundColor(.red)
-                            .padding(.bottom, 11)
-                            .position(x: 330,y:900)
-                    }
-                } else {
-                    Button(action: {self.audioRecorder.stopRecording()}) {
-                        Image(systemName: "mic.slash.fill")
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width: 50, height: 70)
-                            .clipped()
-                            .foregroundColor(.red)
-                            .padding(.bottom, 11)
-                            .position(x: 330,y:900)
-                    }
+                    
+                    Image(systemName: "mic.fill")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 50, height: 70)
+                        .clipped()
+                        .foregroundColor(.black)
+                        .padding(.bottom, 11)
+                        .onAppear()
+                    {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 25.0){
+                            self.audioRecorder.startRecording()
+                            audioRecorder.recording = true
+                        }}
                 }
-            }.position(x: 500,y:500)
-            //.navigationBarTitle("Voice Recorder")
-           // .navigationBarItems(trailing: EditButton())
-        }.navigationViewStyle(StackNavigationViewStyle())
+                else {
+                   
+                    Image(systemName: "mic.fill")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 50, height: 70)
+                        .clipped()
+                        .foregroundColor(.red)
+                        .padding(.bottom, 11)
+                        .onAppear()
+                    {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 6.0){
+                            self.audioRecorder.stopRecording()
+                            
+                            finished = true
+                        }
+                    }
+                    
+                    
+                }
+            }
+                
+           
+            
+        }.offset(x:-536, y:392)
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        RecordAndStop(audioRecorder: AudioRecorder())
-    }
+#Preview {
+    RecordAndStop(audioRecorder: AudioRecorder())
 }
