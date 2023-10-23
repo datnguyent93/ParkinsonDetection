@@ -14,7 +14,7 @@ struct Tracing_test3: View {
     var body: some View {
         NavigationView{
             ZStack{
-                TracingInstruction3()
+                TracingInstruction2()
                 ZStack{
                     ImageTrace()
                     Goodjob2()
@@ -27,27 +27,7 @@ struct Tracing_test3: View {
         }.navigationViewStyle(StackNavigationViewStyle())
     }
 }
-
-struct TracingInstruction3: View {
-    @State private var fadeInOut = false
-    var body: some View {
-        VStack{
-            Text("Attempt 3")
-                .font(.custom("Gurmukhi MN", size: 50))
-        }.opacity(fadeInOut ? 0 : 1)
-        .animation(Animation.easeOut(duration: 5.4) .delay(0.2), value: fadeInOut)
-        .onAppear(){
-            fadeInOut = true
-
-        }
-
-    }
-        
-}
-
-
-
-
+ 
 struct ResultButton: View {
     @State private var fadeInOut = true
     var body: some View {
@@ -65,7 +45,7 @@ struct ResultButton: View {
         .cornerRadius(40)
         .position(x: 973, y:937)
         .opacity(fadeInOut ? 0 : 1)
-        .animation(Animation.easeInOut(duration: 31.4) .delay(4.4), value: fadeInOut)
+        .animation(Animation.easeInOut(duration: 31.4) .delay(30.4), value: fadeInOut)
         
             .onAppear(){
                 fadeInOut = false
@@ -77,3 +57,4 @@ struct ResultButton: View {
 #Preview {
     Tracing_test3()
 }
+
