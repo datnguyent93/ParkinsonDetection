@@ -10,24 +10,24 @@ import SwiftUI
 
 struct MenuBar: View {
     @State private var notification = false
-    @State private var profile = false
+    @State private var home = false
     @State private var testHistory = false
     @State private var information = false
     @State private var setting = false
     @State private var logout = false
     var body: some View {
-        NavigationView{
+        NavigationStack{
             ZStack(alignment: .center){
                 Rectangle()
                     .frame(width: 1834, height: 160)
                     .position(x:513, y:0)
                     .foregroundColor(Color("BarColor").opacity(0.85))
                 HStack {
-                    Text("Welcome @(username)")
+                    Text("Welcome User")
                         .foregroundColor(.white)
                         .bold()
-                        .position(x:150, y:30)
-                        .font(.custom("Sinhala Sangam MN Bold", size: 30))
+                        .position(x:170, y:30)
+                        .font(.custom("Sinhala Sangam MN Bold", size: 40))
                     Button(action: {
                         self.notification.toggle()
                         
@@ -36,17 +36,17 @@ struct MenuBar: View {
                             .accentColor(.white.opacity(0.84))
                             .font(.system(size: 50))
                         
-                    }).position(x:690, y:30)
-//                        .background(
-//                            NavigationLink(destination:  Notification().navigationBarBackButtonHidden(), isActive: $notification) {
-//                            EmptyView()
-//                          }
-//                        )
-                    ZStack{
+                    }).position(x:730, y:30)
+                        .background(
+                            NavigationLink(destination:  Notification().navigationBarBackButtonHidden(), isActive: $notification) {
+                            EmptyView()
+                          }
+                        )
+                 
                         
                         Menu {
-                            Button("Profile") {
-                                self.profile.toggle()
+                            Button("HomePage") {
+                                self.home.toggle()
                                     }
                             Button("TestHistory") {
                                       self.testHistory.toggle()
@@ -67,34 +67,35 @@ struct MenuBar: View {
                                 .accentColor(.white.opacity(0.84))
                                 .font(.system(size: 60))
                             
-                        }//.background(
-//                            Group {
-//            
-//                                NavigationLink(destination: MainPage().navigationBarBackButtonHidden(), isActive: $profile) {
-//                                EmptyView()
-////                                   return AnyView(EmptyView())
-//                              }
-//                                NavigationLink(destination: TestHistory().navigationBarBackButtonHidden(), isActive: $testHistory) {
-//                                  EmptyView()
-//                                        
-//                                }
-//                                NavigationLink(destination: Information().navigationBarBackButtonHidden(), isActive: $information) {
-//                                  EmptyView()
-//                                        
-//                                }
-//                                NavigationLink(destination: Settings().navigationBarBackButtonHidden(), isActive: $setting) {
-//                                  EmptyView()
-//                                        
-//                                }
-//                            NavigationLink(destination: ContentView().navigationBarBackButtonHidden(), isActive: $logout) {
-//                                  EmptyView()
-//                                        
-//                                }
-//                            }
-//                          )
+                        }.position(x:380, y:30)
+                        .background(
+                            Group {
+            
+                                NavigationLink(destination: MainPage().navigationBarBackButtonHidden(), isActive:$home) {
+                                EmptyView()
+                                  
+                              }
+                                NavigationLink(destination: TestHistory().navigationBarBackButtonHidden(), isActive: $testHistory) {
+                                  EmptyView()
+                                  
+                                        
+                                }
+                                NavigationLink(destination: Information().navigationBarBackButtonHidden(), isActive: $information) {
+                                  EmptyView()
+                                        
+                                }
+                                NavigationLink(destination: Settings().navigationBarBackButtonHidden(), isActive: $setting) {
+                                  EmptyView()
+                                        
+                                }
+                            NavigationLink(destination: ContentView().navigationBarBackButtonHidden(), isActive: $logout) {
+                                  EmptyView()
+                                        
+                                }
+                            }
+                          )
                                
-                        
-                    }.position(x:340, y:30)
+                   
                 }
             }
         }.navigationViewStyle(StackNavigationViewStyle())

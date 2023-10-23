@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MainPage: View {
     var body: some View {
-        NavigationView{
+        NavigationStack{
             ZStack{
                 ZStack{
                     MenuBar()

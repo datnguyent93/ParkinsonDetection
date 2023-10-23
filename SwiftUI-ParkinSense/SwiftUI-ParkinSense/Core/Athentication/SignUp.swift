@@ -11,9 +11,10 @@ struct SignUp: View {
     @State private var Firstname = ""
     @State private var Lastname = ""
     @State private var password = ""
-    @State private var wrongusername = 0
-    @State private var wrongpassword = 0
-    @State private var showingLoginScreen = false
+    @State private var wrongFName = 0
+    @State private var wrongLName = 0
+    @State private var wrongPassword = 0
+    @State private var authorized = false
     
     var body: some View {
         NavigationView{
@@ -26,70 +27,90 @@ struct SignUp: View {
                 Circle()
                     .scale(1.2)
                     .foregroundColor(.white)
-                
-                VStack{
-                  
-                    Text("SignUp")
-                        .font(.largeTitle)
-                        .bold()
-                        .padding()
-                    
-                    HStack{
-                        Text("First Name")
-                            .font(.title)
-                            .padding()
+                ZStack{
+                    VStack{
                         
-                        TextField("First Name", text: $Firstname)
+                        Text("SignUp")
+                            .font(.largeTitle)
+                            .bold()
                             .padding()
-                            .frame(width: 300, height: 50)
-                            .background(Color.black.opacity(0.05))
-                            .cornerRadius(10)
-                        // .border(.red, width:<#T##CGFloat#>(wrongusername))
-                    }//.position(x:620, y:30)
-                    HStack{
-                        Text("Last Name")
-                            .font(.title)
-                            .padding()
+                            .offset(x:50)
                         
-                        TextField("Last Name", text: $Lastname)
-                            .padding()
-                            .frame(width: 300, height: 50)
-                            .background(Color.black.opacity(0.05))
-                            .cornerRadius(10)
-                        // .border(.red, width:<#T##CGFloat#>(wrongusername))
-                    }//.position(x:620, y:-120)
-                    HStack{
-                        Text("Password")
+                        HStack{
+                            Text("First Name")
+                                .font(.title)
+                            
+                            TextField("First Name", text: $Firstname)
+                                .font(.custom("Sinhala Sangam MN Bold", size: 25))
+                                .padding()
+                                .frame(width: 300, height: 50)
+                                .background(Color.black.opacity(0.05))
+                                .cornerRadius(10)
+                                .border(.red, width: CGFloat(wrongFName))
+                        }
+                        HStack{
+                            Text("Last Name")
+                                .font(.title)
+                            
+                            TextField("Last Name", text: $Lastname)
+                                .font(.custom("Sinhala Sangam MN Bold", size: 25))
+                                .padding()
+                                .frame(width: 300, height: 50)
+                                .background(Color.black.opacity(0.05))
+                                .cornerRadius(10)
+                                .border(.red, width: CGFloat(wrongLName))
+                        }
+                        HStack{
+                            Text("Password  ")
+                                .font(.title)
+                            
+                            SecureField("Password", text: $password)
+                                .font(.custom("Sinhala Sangam MN Bold", size: 25))
+                                .padding()
+                                .frame(width: 300, height: 50)
+                                .background(Color.black.opacity(0.05))
+                                .cornerRadius(10)
+                                .border(.red, width: CGFloat(wrongPassword))
+                        }
+                        //
+                        Button("Create Profile"){
+                            authenticateUser(Firstname: Firstname, Lastname: Lastname, password: password)
+                        }.foregroundColor(.white)
                             .font(.title)
-                            .padding()
-                        SecureField("Password", text: $password)
-                            .padding()
+                            .bold()
                             .frame(width: 300, height: 50)
-                            .background(Color.black.opacity(0.05))
-                            .cornerRadius(10)
-                        // .border(.red, width:<#T##CGFloat#>(wrongusername))
-                    }//.position(x:630, y:-270)
-//
-                    NavigationLink{
-                        MainPage()
-                            .navigationBarBackButtonHidden()
-                    } label: {
-                        Text("Creat Profile")
+                            .background(Color.purple)
+                            .cornerRadius(40)
+                            .offset(x:70)
+                        NavigationLink(destination: MainPage().navigationBarBackButtonHidden(), isActive: $authorized) {
+                            EmptyView()
+                        }
                         
-                    }.foregroundColor(.white)
-                        .font(.title)
-                        .bold()
-                        .frame(width: 300, height: 50)
-                        .background(Color.purple)
-                        .cornerRadius(40)
-                      
-                    
-                }//.position(x:670, y:790)
-                    
+                    }
+                }.offset(x:-20)
             }
+            
         
     }.navigationViewStyle(StackNavigationViewStyle())
     }
+    func authenticateUser(Firstname: String, Lastname: String, password: String){
+        if Firstname == ""{
+            wrongFName = 0
+            }
+           
+        else if Lastname == ""{
+            wrongLName = 2
+            }
+        
+        else if password == ""{
+            wrongPassword = 2
+        }
+        else
+        {
+            authorized = true
+        }
+    }
+
 }
 
 
