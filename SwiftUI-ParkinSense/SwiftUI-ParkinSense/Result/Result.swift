@@ -10,7 +10,7 @@ import SwiftUI
 struct Result: View {
     @State var percent: Double = 0
     var body: some View {
-        NavigationView{
+        NavigationStack{
             VStack{
                 MenuBar()
                 ZStack{
@@ -33,16 +33,16 @@ struct Result: View {
                                 //.position(/*@START_MENU_TOKEN@*/CGPoint(x: 10.0, y: 10.0)/*@END_MENU_TOKEN@*/)
                         })
                         if(percent <= 50 && percent > 0){
-                            Text("According to the result, we did not detect monotone speech, dysarthria, or inconsistencies in hand-drawing patterns. Therefore the user visit and get a consultation with their primary physician or neurologist.")
+                            Text("According to the result, we did not detect monotone speech, dysarthria, or inconsistencies in hand-drawing patterns.We recommand the user visit and get a consultation with their primary physician.")
                                 .frame(width: 1050, height: 250)
-                                .font(.custom("Gurmukhi MN", size: 20))
+                                .font(.custom("Gurmukhi MN", size: 40))
                                 .foregroundColor(.blue)
                         }
                         else if(percent >= 50){
                             Text("According to the result, we were able to detect monotone speech, dysarthria, and inconsistencies in hand-drawing patterns. We recommend the user visit and get a consultation with their primary physician or neurologist.")
                               //  .position(x:434)
                                 .frame(width: 1050, height: 250)
-                                .font(.custom("Gurmukhi MN", size: 20))
+                                .font(.custom("Gurmukhi MN", size: 40))
                                 .foregroundColor(.red)
                         }
                         
@@ -72,9 +72,9 @@ struct RInstruction: View {
             Text("Result")
                 .bold()
                 .font(.custom("Avenir Next", size: 50))
-                .padding()
+               
             Text("Result Scale")
-                .font(.custom("Gurmukhi MN", size: 35))
+                .font(.custom("Sinhala Sangam MN Bold", size: 45))
                 .position(x: 280)
                 .padding()
             HStack{
@@ -85,15 +85,15 @@ struct RInstruction: View {
                     HStack{
                         Image(systemName: "lessthan")
                             .foregroundColor(.white)
-                            .font(.custom("Sinhala Sangam MN Bold", size: 30))
+                            .font(.custom("Sinhala Sangam MN Bold", size: 40))
                         Text("50")
                             .foregroundColor(.white)
-                            .font(.custom("Sinhala Sangam MN Bold", size: 30))
+                            .font(.custom("Sinhala Sangam MN Bold", size: 40))
                     }
                 }
                 Text(" Indicates that the User is not experiencing symptoms. ")
-                    .font(.custom("Gurmukhi MN", size: 30))
-                    .frame(width: 990, height: 100)
+                    .font(.custom("Gurmukhi MN", size: 40))
+                    .frame(width: 1000, height: 100)
             }
             HStack{
                 ZStack{
@@ -103,15 +103,15 @@ struct RInstruction: View {
                     HStack{
                         Image(systemName: "greaterthan")
                             .foregroundColor(.white)
-                            .font(.custom("Sinhala Sangam MN Bold", size: 30))
+                            .font(.custom("Sinhala Sangam MN Bold", size: 40))
                         Text("50")
                             .foregroundColor(.white)
-                            .font(.custom("Sinhala Sangam MN Bold", size: 30))
+                            .font(.custom("Sinhala Sangam MN Bold", size: 40))
                     }
                 }
                 Text(" Indicates that the User might need consultation with a neurologist. ")
-                    .font(.custom("Gurmukhi MN", size: 30))
-                    .frame(width: 970, height: 100)
+                    .font(.custom("Gurmukhi MN", size: 40))
+                    .frame(width: 1000, height: 100)
                 
             }
            

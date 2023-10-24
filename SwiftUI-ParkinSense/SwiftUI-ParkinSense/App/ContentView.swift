@@ -11,7 +11,7 @@ struct ContentView: View {
         NavigationStack{
             ZStack{
                 
-                VStack{
+                ZStack{
                     Image("Logo")
                         .resizable()
                     
@@ -27,6 +27,7 @@ struct ContentView: View {
                         .frame(width: 300, height: 50)
                         .background(Color.purple)
                         .cornerRadius(40)
+                        .offset(y:400) 
                     
                 }
             }
@@ -34,7 +35,6 @@ struct ContentView: View {
         }
     }
 }
-
 
 
 #Preview {
