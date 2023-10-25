@@ -17,6 +17,10 @@ struct Clock: View {
     
     var body: some View {
         VStack {
+            Text("Timer")                                           //our modification
+            .font(.custom("Avenir Next", size: 60))
+            .fontWeight(.black)
+            .foregroundColor(.red)
             Text(counterToMinutes())
                 .font(.custom("Avenir Next", size: 60))
                 .fontWeight(.black)
@@ -88,15 +92,24 @@ struct CountdownView: View {
                 ProgressTrack()
                 ProgressBar(counter: counter, countTo: countTo)
                 Clock(counter: counter, countTo: countTo)
+                    .onAppear(){                    //our modification
+                        playSound(soundName: "Timer", extension: "mp3", delay: 24.0)     // Play timer sound after delay
+                       
+                        
+                    }
             }
-        }.onReceive(timer) { time in
-            if (self.counter < self.countTo) {
-                self.counter += 1
+        }.onReceive(timer) { time in         //our modification
+            DispatchQueue.main.asyncAfter(deadline: .now() + 25.0) {      //delay the timer from starting
+                if (self.counter < self.countTo) {
+                    self.counter += 1
+                }
             }
+            
         }
         
     }
 }
+
 
 struct CountdownView_Previews: PreviewProvider {
     static var previews: some View {

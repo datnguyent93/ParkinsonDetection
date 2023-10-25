@@ -77,6 +77,7 @@ struct ProfilePage: View {
                         }
                    
                 }.frame(width: 135, height: 34)
+                    .position(x: 50,y:-254)
             }.frame(width: 135, height: 34)
         }
         
@@ -84,7 +85,6 @@ struct ProfilePage: View {
     }.navigationViewStyle(StackNavigationViewStyle())
     }
 }
-
 struct AnnaProfile: View{
     var body: some View {
         Login()

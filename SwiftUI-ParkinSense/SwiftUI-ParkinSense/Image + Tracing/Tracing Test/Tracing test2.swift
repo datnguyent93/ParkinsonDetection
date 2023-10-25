@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 struct Tracing_test2: View {
     @State private var fadeInOut = false
     @State private var shouldShowDestination = false
@@ -17,10 +18,10 @@ struct Tracing_test2: View {
                 TracingInstruction2()
                 ZStack{
                     ImageTrace()
+                    Attempt2()
                     Goodjob2()
                     AtemptButton2()
-                    
-                   
+              
                 }
             }
             
@@ -35,18 +36,52 @@ struct TracingInstruction2: View {
             Text("Attempt 2")
                 .font(.custom("Gurmukhi MN", size: 50))
         }.opacity(fadeInOut ? 0 : 1)
-        .animation(Animation.easeOut(duration: 5.4) .delay(0.2), value: fadeInOut)
-        .onAppear(){
-            fadeInOut = true
+            .animation(Animation.easeOut(duration: 5.4) .delay(4.2), value: fadeInOut)
+            .onAppear(){
+                fadeInOut = true
 
         }
 
     }
+      
         
 }
 
+struct Attempt2: View {
+    @State private var fadeInOut = true
+   
+    var body: some View {
+        ZStack{
+            Circle()
+                .scale(0.2)
+                .foregroundColor(.gray.opacity(0.4))
+            VStack{
+                Text("Attempt")
+                    .font(.custom("Avenir Next", size: 40))
+                    .bold()
+                    .foregroundColor(.black)
+                Text("2")
+                    .font(.custom("Gurmukhi MN", size: 60))
+                    .bold()
+                    .foregroundColor(.red)
+            }
+        }.position(CGPoint(x: 1220.0, y: 140.0))
+            .opacity(fadeInOut ? 0 : 1)
+                .animation(Animation.easeInOut(duration: 4.4) .delay(7.4), value: fadeInOut)
+            
+                .onAppear(){
+                    fadeInOut = false
 
-
+                }
+            .onAppear(){
+            fadeInOut = false
+           
+                }
+                .opacity(fadeInOut ? 1 : 0)
+                .animation(Animation.easeInOut(duration: 29.4) .delay(29.0), value: fadeInOut)
+            
+    }
+}
 
 struct AtemptButton2: View {
     @State private var fadeInOut = true
@@ -65,7 +100,7 @@ struct AtemptButton2: View {
         .cornerRadius(40)
         .position(x: 973, y:937)
         .opacity(fadeInOut ? 0 : 1)
-        .animation(Animation.easeInOut(duration: 31.4) .delay(4.4), value: fadeInOut)
+        .animation(Animation.easeInOut(duration: 31.4) .delay(30.4), value: fadeInOut)
         
             .onAppear(){
                 fadeInOut = false

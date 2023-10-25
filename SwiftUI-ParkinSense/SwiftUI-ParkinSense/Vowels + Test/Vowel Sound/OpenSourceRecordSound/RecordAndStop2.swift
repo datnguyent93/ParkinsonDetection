@@ -1,5 +1,11 @@
 //
-// RecordAndStop
+//  AudioRecorder.swift
+//  Voice Recorder
+//  OPENSOURCE
+//  Created by Pinlun on 2019/10/30.
+//  Copyright © 2019 Pinlun. All rights reserved.
+//
+
 import SwiftUI
 
 struct RecordAndStop2: View {
