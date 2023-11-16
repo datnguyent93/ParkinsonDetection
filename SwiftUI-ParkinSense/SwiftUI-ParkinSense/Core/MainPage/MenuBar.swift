@@ -15,14 +15,15 @@ struct MenuBar: View {
     @State private var information = false
     @State private var setting = false
     @State private var logout = false
+    
     var body: some View {
         NavigationStack{
             ZStack(alignment: .center){
                 Rectangle()
-                    .frame(width: 1834, height: 160)
+                    .frame(maxWidth: .infinity, maxHeight: 160)
                     .position(x:513, y:0)
                     .foregroundColor(Color("BarColor").opacity(0.85))
-                HStack {
+                HStack{
                     Text("Welcome User")
                         .foregroundColor(.white)
                         .bold()
@@ -37,17 +38,11 @@ struct MenuBar: View {
                             .font(.system(size: 50))
                         
                     }).position(x:730, y:30)
-                        .background(
-                            NavigationLink(destination:  Notification().navigationBarBackButtonHidden(), isActive: $notification) {
-                            EmptyView()
-                          }
-                        )
-                 
-                        
-                        Menu {
-                            Button("HomePage") {
-                                self.home.toggle()
-                                    }
+                    .navigationDestination(isPresented: $notification){
+                        Notification()
+                    }
+                    Menu {
+                            Button("HomePage", action: {self.home.toggle()})
                             Button("TestHistory") {
                                       self.testHistory.toggle()
                                     }
@@ -68,12 +63,24 @@ struct MenuBar: View {
                                 .font(.system(size: 60))
                             
                         }.position(x:380, y:30)
-                        .background(
-                            Group {
-            
+                        .navigationDestination(isPresented: $home){
+                            MainPage()
+                        }
+                        .navigationDestination(isPresented: $testHistory){
+                            TestHistory()
+                        }
+                        .navigationDestination(isPresented: $information){
+                            Information()
+                        }
+                        .navigationDestination(isPresented: $setting){
+                            Settings()
+                        }
+                        .navigationDestination(isPresented: $logout){
+                            ContentView()
+                        }
+                    /*Group{
                                 NavigationLink(destination: MainPage().navigationBarBackButtonHidden(), isActive:$home) {
                                 EmptyView()
-                                  
                               }
                                 NavigationLink(destination: TestHistory().navigationBarBackButtonHidden(), isActive: $testHistory) {
                                   EmptyView()
@@ -92,8 +99,8 @@ struct MenuBar: View {
                                   EmptyView()
                                         
                                 }
-                            }
-                          )
+                            }*/
+                          
                                
                    
                 }
