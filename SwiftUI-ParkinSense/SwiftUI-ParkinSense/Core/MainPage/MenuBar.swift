@@ -9,6 +9,7 @@ import SwiftUI
 
 
 struct MenuBar: View {
+    let screen = UIScreen.main.bounds
     @State private var notification = false
     @State private var home = false
     @State private var testHistory = false
@@ -18,17 +19,19 @@ struct MenuBar: View {
     
     var body: some View {
         NavigationStack{
-            ZStack(alignment: .center){
-                Rectangle()
-                    .frame(maxWidth: .infinity, maxHeight: 160)
-                    .position(x:513, y:0)
-                    .foregroundColor(Color("BarColor").opacity(0.85))
-                HStack{
+            ZStack(alignment: .top){
+                VStack{
+                    Color("BarColor").frame(height: 100)
+                        .edgesIgnoringSafeArea(.top)
+                    Spacer()
+                }
+                HStack(){
                     Text("Welcome User")
                         .foregroundColor(.white)
                         .bold()
-                        .position(x:170, y:30)
                         .font(.custom("Sinhala Sangam MN Bold", size: 40))
+                        .lineLimit(1)
+                        
                     Button(action: {
                         self.notification.toggle()
                         
@@ -37,74 +40,58 @@ struct MenuBar: View {
                             .accentColor(.white.opacity(0.84))
                             .font(.system(size: 50))
                         
-                    }).position(x:730, y:30)
+                    })
+                    .padding(.leading, screen.width * 0.5)                    //.position(x:738, y:30)
                     .navigationDestination(isPresented: $notification){
                         Notification()
                     }
+                    //Spacer()
                     Menu {
-                            Button("HomePage", action: {self.home.toggle()})
-                            Button("TestHistory") {
-                                      self.testHistory.toggle()
-                                    }
-                            Button("Information") {
-                                      self.information.toggle()
-                                    }
-                            Button("Setting") {
-                                      self.setting.toggle()
-                                    }
-                            Button("Logout") {
-                                      self.logout.toggle()
-                                    }
-                      
-                            
-                        } label: {
-                            Image(systemName: "text.justify")
-                                .accentColor(.white.opacity(0.84))
-                                .font(.system(size: 60))
-                            
-                        }.position(x:380, y:30)
-                        .navigationDestination(isPresented: $home){
-                            MainPage()
+                        Button("HomePage", action: {self.home.toggle()})
+                        Button("TestHistory") {
+                            self.testHistory.toggle()
                         }
-                        .navigationDestination(isPresented: $testHistory){
-                            TestHistory()
+                        Button("Information") {
+                            self.information.toggle()
                         }
-                        .navigationDestination(isPresented: $information){
-                            Information()
+                        Button("Setting") {
+                            self.setting.toggle()
                         }
-                        .navigationDestination(isPresented: $setting){
-                            Settings()
+                        Button("Logout") {
+                            self.logout.toggle()
                         }
-                        .navigationDestination(isPresented: $logout){
-                            ContentView()
-                        }
-                    /*Group{
-                                NavigationLink(destination: MainPage().navigationBarBackButtonHidden(), isActive:$home) {
-                                EmptyView()
-                              }
-                                NavigationLink(destination: TestHistory().navigationBarBackButtonHidden(), isActive: $testHistory) {
-                                  EmptyView()
-                                  
-                                        
-                                }
-                                NavigationLink(destination: Information().navigationBarBackButtonHidden(), isActive: $information) {
-                                  EmptyView()
-                                        
-                                }
-                                NavigationLink(destination: Settings().navigationBarBackButtonHidden(), isActive: $setting) {
-                                  EmptyView()
-                                        
-                                }
-                            NavigationLink(destination: ContentView().navigationBarBackButtonHidden(), isActive: $logout) {
-                                  EmptyView()
-                                        
-                                }
-                            }*/
-                          
-                               
-                   
-                }
+                        
+                        
+                    } label: {
+                        Image(systemName: "text.justify")
+                            .accentColor(.white.opacity(0.84))
+                            .font(.system(size: 50))
+                        
+                    }
+                    //.position(y:30)
+                    .navigationDestination(isPresented: $home){
+                        MainPage().navigationBarBackButtonHidden()
+                    }
+                    .navigationDestination(isPresented: $testHistory){
+                        TestHistory().navigationBarBackButtonHidden()
+                    }
+                    .navigationDestination(isPresented: $information){
+                        Information().navigationBarBackButtonHidden()
+                    }
+                    .navigationDestination(isPresented: $setting){
+                        Settings().navigationBarBackButtonHidden()
+                    }
+                    .navigationDestination(isPresented: $logout){
+                        ContentView().navigationBarBackButtonHidden()
+                    }
+                    
+                } //hstack
+                .frame(width: .infinity, height: .infinity, alignment: .top)
+                .edgesIgnoringSafeArea(.top)
+                .padding(.top, 3)
+                
             }
+            //Spacer()
         }.navigationViewStyle(StackNavigationViewStyle())
     }
 }
