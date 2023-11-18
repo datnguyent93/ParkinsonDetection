@@ -73,9 +73,13 @@ struct Login: View {
                             .background(Color.purple)
                             .cornerRadius(40)
                             .offset(x:70)
-                        NavigationLink(destination: MainPage().navigationBarBackButtonHidden(), isActive: $authorized) {
+                            .navigationDestination(isPresented: $authorized){
+                                MainPage().navigationBarBackButtonHidden()
+                            }
+                            
+                        /*NavigationLink(destination: MainPage().navigationBarBackButtonHidden(), isActive: $authorized) {
                             EmptyView()
-                        }
+                        }*/
                         
                         NavigationLink{
                             SignUp()

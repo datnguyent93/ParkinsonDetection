@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05D49DE12B05D83B002282A6 /* RecordingDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D49DE02B05D83B002282A6 /* RecordingDataModel.swift */; };
 		0D06537F2AE244F90062BA7F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3A88C2AC3FEF10009B7D5 /* ContentView.swift */; };
 		0DC3A88B2AC3FEF10009B7D5 /* SwiftUI_ParkinSenseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3A88A2AC3FEF10009B7D5 /* SwiftUI_ParkinSenseApp.swift */; };
 		0DC3A88F2AC3FEF30009B7D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DC3A88E2AC3FEF30009B7D5 /* Assets.xcassets */; };
@@ -40,7 +41,6 @@
 		2568556A2ADE780F006BC0F6 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256855692ADE780F006BC0F6 /* Helper.swift */; };
 		2568556C2ADE781D006BC0F6 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568556B2ADE781D006BC0F6 /* AudioPlayer.swift */; };
 		2568556E2ADE782F006BC0F6 /* RecordingsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568556D2ADE782F006BC0F6 /* RecordingsList.swift */; };
-		256855702ADE783E006BC0F6 /*  RecordingDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568556F2ADE783E006BC0F6 /*  RecordingDataModel.swift */; };
 		256855722ADE7A68006BC0F6 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256855712ADE7A68006BC0F6 /* MenuBar.swift */; };
 		256855752ADE7B50006BC0F6 /* Vowel Sound in Resources */ = {isa = PBXBuildFile; fileRef = 256855742ADE7B50006BC0F6 /* Vowel Sound */; };
 		2568557A2ADE7F0A006BC0F6 /* SpiralPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256855792ADE7F0A006BC0F6 /* SpiralPoints.swift */; };
@@ -74,6 +74,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05D49DE02B05D83B002282A6 /* RecordingDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecordingDataModel.swift; path = ../../../../../../../.Trash/RecordingDataModel.swift; sourceTree = "<group>"; };
 		0DC3A8872AC3FEF10009B7D5 /* SwiftUI-ParkinSense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-ParkinSense.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DC3A88A2AC3FEF10009B7D5 /* SwiftUI_ParkinSenseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ParkinSenseApp.swift; sourceTree = "<group>"; };
 		0DC3A88C2AC3FEF10009B7D5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -110,7 +111,6 @@
 		256855692ADE780F006BC0F6 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		2568556B2ADE781D006BC0F6 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		2568556D2ADE782F006BC0F6 /* RecordingsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingsList.swift; sourceTree = "<group>"; };
-		2568556F2ADE783E006BC0F6 /*  RecordingDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " RecordingDataModel.swift"; sourceTree = "<group>"; };
 		256855712ADE7A68006BC0F6 /* MenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
 		256855742ADE7B50006BC0F6 /* Vowel Sound */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Vowel Sound"; sourceTree = "<group>"; };
 		256855792ADE7F0A006BC0F6 /* SpiralPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiralPoints.swift; sourceTree = "<group>"; };
@@ -329,6 +329,7 @@
 		256855572ADE75D4006BC0F6 /* OpenSourceRecordSound */ = {
 			isa = PBXGroup;
 			children = (
+				05D49DE02B05D83B002282A6 /* RecordingDataModel.swift */,
 				256855612ADE77BD006BC0F6 /* AudioRecorder.swift */,
 				256855632ADE77DA006BC0F6 /* Extensions.swift */,
 				256855652ADE77EA006BC0F6 /* RecordAndStop.swift */,
@@ -336,7 +337,6 @@
 				256855692ADE780F006BC0F6 /* Helper.swift */,
 				2568556B2ADE781D006BC0F6 /* AudioPlayer.swift */,
 				2568556D2ADE782F006BC0F6 /* RecordingsList.swift */,
-				2568556F2ADE783E006BC0F6 /*  RecordingDataModel.swift */,
 			);
 			path = OpenSourceRecordSound;
 			sourceTree = "<group>";
@@ -575,6 +575,7 @@
 				256855912ADE826B006BC0F6 /* Information.swift in Sources */,
 				256855852ADE80E6006BC0F6 /* ResultBar.swift in Sources */,
 				2568556E2ADE782F006BC0F6 /* RecordingsList.swift in Sources */,
+				05D49DE12B05D83B002282A6 /* RecordingDataModel.swift in Sources */,
 				256855822ADE8013006BC0F6 /* Tracing test3.swift in Sources */,
 				2551A7262AE7ABF500F4EE18 /* TestHistorydata.swift in Sources */,
 				250470DF2AD371350053D8EF /* Timer2.swift in Sources */,
@@ -603,7 +604,6 @@
 				250470D92AD3664D0053D8EF /* MainPage.swift in Sources */,
 				2568558F2ADE825D006BC0F6 /* Settings.swift in Sources */,
 				2568557A2ADE7F0A006BC0F6 /* SpiralPoints.swift in Sources */,
-				256855702ADE783E006BC0F6 /*  RecordingDataModel.swift in Sources */,
 				2568557C2ADE7F1A006BC0F6 /* SpiralView.swift in Sources */,
 				2568558D2ADE824F006BC0F6 /* Notification.swift in Sources */,
 				250470E12AD372420053D8EF /* AVowelTest.swift in Sources */,

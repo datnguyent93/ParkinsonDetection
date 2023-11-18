@@ -67,7 +67,8 @@ struct ProgressBar: View {
                     .foregroundColor(
                         (completed() ? Color.green : Color.orange)
                 ).animation(
-                    .easeInOut(duration: 0.2)
+                    .easeInOut(duration: 0.2),
+                    value: counter
                 )
         )
     }
