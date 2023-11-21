@@ -31,7 +31,7 @@ struct Instruction2: View {
     @State private var fadeInOut = false
     var body: some View {
         VStack{
-            Text(" The Next Vowel is coming Up")
+            Text("The next vowel is coming up")
                 .font(.custom("Gurmukhi MN", size: 50))
         }.opacity(fadeInOut ? 0 : 1)
         .animation(Animation.easeInOut(duration: 7.4) .delay(1.2), value: fadeInOut)

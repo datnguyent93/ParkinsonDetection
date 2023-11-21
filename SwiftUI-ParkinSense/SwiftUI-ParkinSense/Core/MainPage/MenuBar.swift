@@ -20,24 +20,26 @@ struct MenuBar: View {
     var body: some View {
         NavigationStack{
             ZStack(alignment: .top){
+                //Color.black
+                    //.ignoresSafeArea()
                 VStack{
-                    Color("BarColor").frame(height: 100)
+                    Color("pOrange").frame(height: 100)
                         .edgesIgnoringSafeArea(.top)
                     Spacer()
                 }
                 HStack(){
                     Text("Welcome User")
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
                         .bold()
                         .font(.custom("Sinhala Sangam MN Bold", size: 40))
-                        .lineLimit(1)
+                        //.lineLimit(1)
                         
                     Button(action: {
                         self.notification.toggle()
                         
                     }, label:  {
                         Image(systemName: "bell.fill")
-                            .accentColor(.white.opacity(0.84))
+                            .accentColor(.black)
                             .font(.system(size: 50))
                         
                     })
@@ -47,14 +49,14 @@ struct MenuBar: View {
                     }
                     //Spacer()
                     Menu {
-                        Button("HomePage", action: {self.home.toggle()})
-                        Button("TestHistory") {
+                        Button("Home", action: {self.home.toggle()})
+                        Button("Test History") {
                             self.testHistory.toggle()
                         }
                         Button("Information") {
                             self.information.toggle()
                         }
-                        Button("Setting") {
+                        Button("Settings") {
                             self.setting.toggle()
                         }
                         Button("Logout") {
@@ -64,7 +66,7 @@ struct MenuBar: View {
                         
                     } label: {
                         Image(systemName: "text.justify")
-                            .accentColor(.white.opacity(0.84))
+                            .accentColor(.black)
                             .font(.system(size: 50))
                         
                     }
@@ -90,7 +92,7 @@ struct MenuBar: View {
                 .edgesIgnoringSafeArea(.top)
                 .padding(.top, 3)
                 
-            }
+            }//zstack
             //Spacer()
         }.navigationViewStyle(StackNavigationViewStyle())
     }

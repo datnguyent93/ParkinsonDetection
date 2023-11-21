@@ -53,7 +53,7 @@ struct TestDiscription: View {
                 .font(.largeTitle)
                 
             }.position(x: 250, y:50)
-            Text("In this section of the test, you will be asked to repeat the 5 vowels you hear. An audio and visualization of the vowels will be provided. You will have 5 seconds to Attempt to complete the task.")
+            Text("In this section of the test, you will be asked to repeat the 5 vowels you hear. An audio and visualization of the vowels will be provided. You will have 5 seconds to attempt to complete the task.")
                 .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                 .frame(width: 1000)
                 .font(.custom("", size: 30))
@@ -67,7 +67,7 @@ struct TestDiscription: View {
                 .font(.largeTitle)
                 
             }.position(x: 200, y:-20)
-            Text("In this section of the test, you will be asked to trace and connect a doted lines. Please trace the following image from the left edge to the center. You will have 3 Attempts to complete the task.")
+            Text("In this section of the test, you will be asked to trace and connect a dotted lines. Please trace the following image from the left edge to the center. You will have 3 attempts to complete the task.")
                 .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                 .frame(width: 1000)
                 .font(.custom("", size: 30))

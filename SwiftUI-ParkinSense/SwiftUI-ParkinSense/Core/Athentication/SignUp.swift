@@ -15,6 +15,7 @@ struct SignUp: View {
     @State private var wrongLName = 0
     @State private var wrongPassword = 0
     @State private var authorized = false
+    @State private var signup = true
     
     var body: some View {
         NavigationView{
@@ -82,7 +83,7 @@ struct SignUp: View {
                             .background(Color.purple)
                             .cornerRadius(40)
                             .offset(x:70)
-                            .navigationDestination(isPresented: $authorized){
+                            .navigationDestination(isPresented: $signup){
                                 MainPage().navigationBarBackButtonHidden()
                             }
                         
