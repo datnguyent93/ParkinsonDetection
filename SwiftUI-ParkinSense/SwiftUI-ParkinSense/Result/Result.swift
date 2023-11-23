@@ -41,7 +41,7 @@ struct Result: View {
                             Text("\nNegative")
                                 .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                                 //.position(/*@START_MENU_TOKEN@*/CGPoint(x: 10.0, y: 10.0)/*@END_MENU_TOKEN@*/)
-                        })                        
+                        })
                         if(percent <= 50 && percent > 0){
                             Group{
                                 Text("Result: ")
@@ -53,7 +53,7 @@ struct Result: View {
                                     .font(.custom("Avenir Next", size: 60, relativeTo: .body)).bold()
                             }
                             
-                            Text("According to the result, we did not detect monotone speech, dysarthria, or inconsistencies in hand-drawing patterns. If you have any further concerns, we recommand the user visit and get a consultation with their primary physician.")
+                            Text("According to the result, we did not detect monotone speech, dysarthria, or inconsistencies in hand-drawing patterns. If you have any further concerns, we recommend that you visit and get a consultation with their primary physician.")
                                 .frame(width: screen.width * 0.8, height: 250)
                                 .font(.custom("Gurmukhi MN", size: 40, relativeTo: .body))
                                 .foregroundColor(.white)
@@ -69,7 +69,7 @@ struct Result: View {
                                     .font(.custom("Avenir Next", size: 60, relativeTo: .body)).bold()
                             }
                             
-                            Text("According to the result, we were able to detect monotone speech, dysarthria, and inconsistencies in hand-drawing patterns. We recommend the user visit and get a consultation with their primary physician or neurologist.")
+                            Text("According to the result, we were able to detect monotone speech, dysarthria, and inconsistencies in hand-drawing patterns. We recommend that you visit and get a consultation with their primary physician or neurologist.")
                               //  .position(x:434)
                                 .frame(width: screen.width * 0.8, height: 250)
                                 .font(.custom("Gurmukhi MN", size: 40))
@@ -119,7 +119,7 @@ struct RInstruction: View {
                             .font(.custom("Sinhala Sangam MN Bold", size: 30))
                         Text("50")
                             .foregroundColor(.white)
-                            .font(.custom("Courier New", size: 40)).bold() 
+                            .font(.custom("Courier New", size: 40)).bold()
                     }
                 }
                 .contentMargins(.trailing, 10)

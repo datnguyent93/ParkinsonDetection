@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0597AC622B0F199A0003DAA3 /* Constantia Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0597AC602B0F199A0003DAA3 /* Constantia Bold.ttf */; };
-		0597AC632B0F199A0003DAA3 /* constan.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0597AC612B0F199A0003DAA3 /* constan.ttf */; };
 		05D49DE12B05D83B002282A6 /* RecordingDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D49DE02B05D83B002282A6 /* RecordingDataModel.swift */; };
 		0D06537F2AE244F90062BA7F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3A88C2AC3FEF10009B7D5 /* ContentView.swift */; };
 		0DC3A88B2AC3FEF10009B7D5 /* SwiftUI_ParkinSenseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3A88A2AC3FEF10009B7D5 /* SwiftUI_ParkinSenseApp.swift */; };
@@ -77,8 +75,8 @@
 
 /* Begin PBXFileReference section */
 		0512296B2B0C5B2900CF9EF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		0597AC602B0F199A0003DAA3 /* Constantia Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Constantia Bold.ttf"; sourceTree = "<group>"; };
-		0597AC612B0F199A0003DAA3 /* constan.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = constan.ttf; sourceTree = "<group>"; };
+		0597AC642B0F21E00003DAA3 /* constan.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = constan.ttf; sourceTree = "<group>"; };
+		0597AC652B0F21E00003DAA3 /* Constantia Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Constantia Bold.ttf"; sourceTree = "<group>"; };
 		05D49DE02B05D83B002282A6 /* RecordingDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecordingDataModel.swift; path = ../../../../../../../.Trash/RecordingDataModel.swift; sourceTree = "<group>"; };
 		0DC3A8872AC3FEF10009B7D5 /* SwiftUI-ParkinSense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-ParkinSense.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DC3A88A2AC3FEF10009B7D5 /* SwiftUI_ParkinSenseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ParkinSenseApp.swift; sourceTree = "<group>"; };
@@ -199,8 +197,8 @@
 				2568558A2ADE8205006BC0F6 /* Information */,
 				2568558B2ADE8219006BC0F6 /* Test History */,
 				0DC3A88E2AC3FEF30009B7D5 /* Assets.xcassets */,
-				0597AC612B0F199A0003DAA3 /* constan.ttf */,
-				0597AC602B0F199A0003DAA3 /* Constantia Bold.ttf */,
+				0597AC642B0F21E00003DAA3 /* constan.ttf */,
+				0597AC652B0F21E00003DAA3 /* Constantia Bold.ttf */,
 				0DC3A8902AC3FEF30009B7D5 /* Preview Content */,
 			);
 			path = "SwiftUI-ParkinSense";
@@ -552,11 +550,9 @@
 				2551A7242AE7954600F4EE18 /* ESound.mp3 in Resources */,
 				0DC3A8922AC3FEF30009B7D5 /* Preview Assets.xcassets in Resources */,
 				256855752ADE7B50006BC0F6 /* Vowel Sound in Resources */,
-				0597AC632B0F199A0003DAA3 /* constan.ttf in Resources */,
 				2551A7222AE7954600F4EE18 /* ISound.mp3 in Resources */,
 				2551A7202AE7954600F4EE18 /* ASound.mp3 in Resources */,
 				2551A71F2AE7954600F4EE18 /* USound.mp3 in Resources */,
-				0597AC622B0F199A0003DAA3 /* Constantia Bold.ttf in Resources */,
 				0DC3A88F2AC3FEF30009B7D5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
