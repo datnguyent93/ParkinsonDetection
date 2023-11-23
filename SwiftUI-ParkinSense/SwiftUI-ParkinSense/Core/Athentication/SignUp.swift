@@ -31,7 +31,7 @@ struct SignUp: View {
                 ZStack{
                     VStack{
                         
-                        Text("SignUp")
+                        Text("Sign Up")
                             .font(.largeTitle)
                             .bold()
                             .padding()
