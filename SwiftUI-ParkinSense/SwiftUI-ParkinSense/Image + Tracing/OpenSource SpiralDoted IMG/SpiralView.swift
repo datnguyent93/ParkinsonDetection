@@ -88,6 +88,7 @@ struct SpiralImage: View {
                     
             }
             .font(.title.bold())
+            .foregroundColor(.white)
             .frame(width: 900, height: 700)
             .padding()
         

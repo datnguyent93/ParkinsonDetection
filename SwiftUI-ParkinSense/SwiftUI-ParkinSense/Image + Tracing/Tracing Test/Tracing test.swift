@@ -25,6 +25,7 @@ struct Tracing_test: View {
                    
                 }
             }
+            .background(Color.black)
             
         }.navigationViewStyle(StackNavigationViewStyle())
     }
@@ -37,8 +38,10 @@ struct TracingInstruction: View {
             Text("Instruction")
                 .bold()
                 .font(.custom("Avenir Next", size: 80))
+                .foregroundColor(.white)
             Text("Please trace the following image from the left edge to the center.\n You will have 3 Attempts to complete the task.")
                 .font(.custom("Gurmukhi MN", size: 40))
+                .foregroundColor(.white)
         }.opacity(fadeInOut ? 0 : 1)
         .animation(Animation.easeOut(duration: 5.4) .delay(4.2), value: fadeInOut)
         .onAppear(){
@@ -106,7 +109,7 @@ struct Attempt: View {
         ZStack{
             Circle()
                 .scale(0.2)
-                .foregroundColor(.gray.opacity(0.4))
+                .foregroundColor(Color("pGreen"))
             VStack{
                 Text("Attempt")
                     .font(.custom("Avenir Next", size: 40))
@@ -115,7 +118,7 @@ struct Attempt: View {
                 Text("1")
                     .font(.custom("Gurmukhi MN", size: 60))
                     .bold()
-                    .foregroundColor(.red)
+                    .foregroundColor(.black)
             }
         }.position(CGPoint(x: 1220.0, y: 140.0))
             .opacity(fadeInOut ? 0 : 1)

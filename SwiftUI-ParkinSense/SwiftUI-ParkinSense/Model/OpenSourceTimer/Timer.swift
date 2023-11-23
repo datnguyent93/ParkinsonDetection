@@ -23,6 +23,7 @@ struct Clock: View {
             .foregroundColor(.red)
             Text(counterToMinutes())
                 .font(.custom("Avenir Next", size: 60))
+                .foregroundColor(.white)
                 .fontWeight(.black)
         }
     }
@@ -54,6 +55,7 @@ struct ProgressBar: View {
     var body: some View {
         Circle()
             .fill(Color.clear)
+            //.foregroundColor(.white)
             .frame(width: 250, height: 250)
             .overlay(
                 Circle().trim(from:0, to: progress())
