@@ -85,7 +85,7 @@ struct Login: View {
                             SignUp()
                                 .navigationBarBackButtonHidden()
                         } label: {
-                            Text("First time user? SignUp")
+                            Text("First time user? Sign up!")
                                 .font(.custom("Sinhala Sangam MN", size: 30))
                                 .offset(x:70)
                         }

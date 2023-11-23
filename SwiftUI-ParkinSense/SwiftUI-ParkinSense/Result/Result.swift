@@ -17,8 +17,7 @@ struct Result: View {
                 MenuBar()
                 ZStack{
                     VStack{
-                        RInstruction()
-                        Spacer()
+                        
                         /*VStack{
                             Text("Your Score: \(Int(percent))")
                                 .font(.system(size: 40, weight: .bold))
@@ -96,65 +95,6 @@ struct Result: View {
             } .background(Color.black)
         }.navigationViewStyle(StackNavigationViewStyle())
     }
-    
-}
-
-struct RInstruction: View {
-    var body: some View {
-        VStack{
-            
-               
-            /*Text("Result Scale")
-                .font(.custom("Sinhala Sangam MN Bold", size: 45))
-                .position(x: 280)
-                .padding()
-            HStack{
-                ZStack{
-                    Rectangle()
-                        .frame(width: 95,height: 100)
-                        .foregroundColor(.blue.opacity(0.75))
-                    HStack{
-                        Image(systemName: "lessthan")
-                            .foregroundColor(.white)
-                            .font(.custom("Sinhala Sangam MN Bold", size: 30))
-                        Text("50")
-                            .foregroundColor(.white)
-                            .font(.custom("Courier New", size: 40)).bold()
-                    }
-                }
-                .contentMargins(.trailing, 10)
-                Text("Indicates that User's symptoms are not indicative of Parkinson's Disease. ")
-                    .font(.custom("Helvetica Neue", size: 40))
-                    .frame(width: 1000, height: 100)
-                    .foregroundColor(.white)
-            }
-            HStack{
-                ZStack{
-                    Rectangle()
-                        .frame(width: 95,height: 100)
-                        .foregroundColor(.red.opacity(0.95))
-                    HStack{
-                        Image(systemName: "greaterthan")
-                            .foregroundColor(.white)
-                            .font(.custom("Sinhala Sangam MN Bold", size: 30))
-                        Text("50")
-                            .foregroundColor(.white)
-                            .font(.custom("Courier New", size: 40)).bold()
-                    }
-                }
-                Text("Indicates that User might need consultation with a neurologist.")
-                    .font(.custom("Helvetica Neue", size: 40))
-                    .frame(width: 1000, height: 100)
-                    .foregroundColor(.white)
-            }*/
-           
-        }
-       
-        
-
-    }
-        
-    
     
 }
 
