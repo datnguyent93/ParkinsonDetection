@@ -30,9 +30,8 @@ struct MenuBar: View {
                 HStack(){
                     Text("Welcome User")
                         .foregroundColor(.black)
-                        .font(.custom("Constantia", size: 45))
                         .bold()
-                        .padding(.top, 30)
+                        .font(.custom("Sinhala Sangam MN Bold", size: 40))
                         //.lineLimit(1)
                         
                     Button(action: {
@@ -42,7 +41,7 @@ struct MenuBar: View {
                         Image(systemName: "bell.fill")
                             .accentColor(.black)
                             .font(.system(size: 50))
-                            .padding(.top, 20)
+                        
                     })
                     .padding(.leading, screen.width * 0.5)                    //.position(x:738, y:30)
                     .navigationDestination(isPresented: $notification){
@@ -92,12 +91,9 @@ struct MenuBar: View {
                 .frame(width: .infinity, height: .infinity, alignment: .top)
                 .edgesIgnoringSafeArea(.top)
                 .padding(.top, 3)
-                //.border(.black)
                 
             }//zstack
-            .frame(width: .infinity, height: 100)
-            //.border(.blue)
-            Spacer()
+            //Spacer()
         }.navigationViewStyle(StackNavigationViewStyle())
     }
 }
