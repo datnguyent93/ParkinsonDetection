@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0512296A2B0C5AE400CF9EF3 /* constan.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 051229692B0C5AE400CF9EF3 /* constan.ttf */; };
+		0597AC5C2B0F16500003DAA3 /* Constantia Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0597AC5B2B0F16500003DAA3 /* Constantia Bold.ttf */; };
 		05D49DE12B05D83B002282A6 /* RecordingDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D49DE02B05D83B002282A6 /* RecordingDataModel.swift */; };
 		0D06537F2AE244F90062BA7F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3A88C2AC3FEF10009B7D5 /* ContentView.swift */; };
 		0DC3A88B2AC3FEF10009B7D5 /* SwiftUI_ParkinSenseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3A88A2AC3FEF10009B7D5 /* SwiftUI_ParkinSenseApp.swift */; };
@@ -77,6 +78,7 @@
 /* Begin PBXFileReference section */
 		051229692B0C5AE400CF9EF3 /* constan.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = constan.ttf; path = ../../../../Downloads/constan.ttf; sourceTree = "<group>"; };
 		0512296B2B0C5B2900CF9EF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0597AC5B2B0F16500003DAA3 /* Constantia Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Constantia Bold.ttf"; path = "../../../../Downloads/Constantia Bold.ttf"; sourceTree = "<group>"; };
 		05D49DE02B05D83B002282A6 /* RecordingDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecordingDataModel.swift; path = ../../../../../../../.Trash/RecordingDataModel.swift; sourceTree = "<group>"; };
 		0DC3A8872AC3FEF10009B7D5 /* SwiftUI-ParkinSense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-ParkinSense.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DC3A88A2AC3FEF10009B7D5 /* SwiftUI_ParkinSenseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ParkinSenseApp.swift; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 				2568558A2ADE8205006BC0F6 /* Information */,
 				2568558B2ADE8219006BC0F6 /* Test History */,
 				0DC3A88E2AC3FEF30009B7D5 /* Assets.xcassets */,
+				0597AC5B2B0F16500003DAA3 /* Constantia Bold.ttf */,
 				051229692B0C5AE400CF9EF3 /* constan.ttf */,
 				0DC3A8902AC3FEF30009B7D5 /* Preview Content */,
 			);
@@ -544,6 +547,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0597AC5C2B0F16500003DAA3 /* Constantia Bold.ttf in Resources */,
 				2551A7232AE7954600F4EE18 /* OSound.mp3 in Resources */,
 				2551A7212AE7954600F4EE18 /* Timer.mp3 in Resources */,
 				2551A7242AE7954600F4EE18 /* ESound.mp3 in Resources */,

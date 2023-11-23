@@ -4,6 +4,7 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
+		<string>Constantia Bold.ttf</string>
 		<string>constan.ttf</string>
 	</array>
 	<key>UTImportedTypeDeclarations</key>
