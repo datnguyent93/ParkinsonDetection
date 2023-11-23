@@ -21,8 +21,10 @@ struct ContentView: View {
                     
                     Group{
                         Text("Parkin").font(.custom("Constantia",size:150)).foregroundColor(Color("pOrange"))
+                            .bold()
                         +
                         Text("Sense").font(.custom("Constantia",size:150)).foregroundColor(Color("pGreen"))
+                            .bold()
                     }
                     //.offset(y:-500)
                     NavigationLink{
