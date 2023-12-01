@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		057C122F2B0F29CC0043CBBE /* constan.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0597AC642B0F21E00003DAA3 /* constan.ttf */; };
 		057C12302B0F29CF0043CBBE /* Constantia Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0597AC652B0F21E00003DAA3 /* Constantia Bold.ttf */; };
-		05D49DE12B05D83B002282A6 /* RecordingDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D49DE02B05D83B002282A6 /* RecordingDataModel.swift */; };
 		0D06537F2AE244F90062BA7F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3A88C2AC3FEF10009B7D5 /* ContentView.swift */; };
 		0DC3A88B2AC3FEF10009B7D5 /* SwiftUI_ParkinSenseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3A88A2AC3FEF10009B7D5 /* SwiftUI_ParkinSenseApp.swift */; };
 		0DC3A88F2AC3FEF30009B7D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DC3A88E2AC3FEF30009B7D5 /* Assets.xcassets */; };
@@ -56,6 +55,7 @@
 		2568558F2ADE825D006BC0F6 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2568558E2ADE825D006BC0F6 /* Settings.swift */; };
 		256855912ADE826B006BC0F6 /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256855902ADE826B006BC0F6 /* Information.swift */; };
 		256855932ADE827F006BC0F6 /* TestHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256855922ADE827F006BC0F6 /* TestHistory.swift */; };
+		E158BDF42B19357800E06171 /* RecordingDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E158BDF32B19357800E06171 /* RecordingDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,7 +79,6 @@
 		0512296B2B0C5B2900CF9EF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0597AC642B0F21E00003DAA3 /* constan.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = constan.ttf; sourceTree = "<group>"; };
 		0597AC652B0F21E00003DAA3 /* Constantia Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Constantia Bold.ttf"; sourceTree = "<group>"; };
-		05D49DE02B05D83B002282A6 /* RecordingDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecordingDataModel.swift; path = ../../../../../../../.Trash/RecordingDataModel.swift; sourceTree = "<group>"; };
 		0DC3A8872AC3FEF10009B7D5 /* SwiftUI-ParkinSense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-ParkinSense.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DC3A88A2AC3FEF10009B7D5 /* SwiftUI_ParkinSenseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ParkinSenseApp.swift; sourceTree = "<group>"; };
 		0DC3A88C2AC3FEF10009B7D5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -129,6 +128,7 @@
 		2568558E2ADE825D006BC0F6 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		256855902ADE826B006BC0F6 /* Information.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Information.swift; sourceTree = "<group>"; };
 		256855922ADE827F006BC0F6 /* TestHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHistory.swift; sourceTree = "<group>"; };
+		E158BDF32B19357800E06171 /* RecordingDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordingDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -337,7 +337,7 @@
 		256855572ADE75D4006BC0F6 /* OpenSourceRecordSound */ = {
 			isa = PBXGroup;
 			children = (
-				05D49DE02B05D83B002282A6 /* RecordingDataModel.swift */,
+				E158BDF32B19357800E06171 /* RecordingDataModel.swift */,
 				256855612ADE77BD006BC0F6 /* AudioRecorder.swift */,
 				256855632ADE77DA006BC0F6 /* Extensions.swift */,
 				256855652ADE77EA006BC0F6 /* RecordAndStop.swift */,
@@ -585,7 +585,6 @@
 				256855912ADE826B006BC0F6 /* Information.swift in Sources */,
 				256855852ADE80E6006BC0F6 /* ResultBar.swift in Sources */,
 				2568556E2ADE782F006BC0F6 /* RecordingsList.swift in Sources */,
-				05D49DE12B05D83B002282A6 /* RecordingDataModel.swift in Sources */,
 				256855822ADE8013006BC0F6 /* Tracing test3.swift in Sources */,
 				2551A7262AE7ABF500F4EE18 /* TestHistorydata.swift in Sources */,
 				250470DF2AD371350053D8EF /* Timer2.swift in Sources */,
@@ -599,6 +598,7 @@
 				2568555E2ADE7701006BC0F6 /* OVowelTest.swift in Sources */,
 				2568556C2ADE781D006BC0F6 /* AudioPlayer.swift in Sources */,
 				2568556A2ADE780F006BC0F6 /* Helper.swift in Sources */,
+				E158BDF42B19357800E06171 /* RecordingDataModel.swift in Sources */,
 				2568555A2ADE7688006BC0F6 /* EVowelTest.swift in Sources */,
 				256855562ADE75AB006BC0F6 /* PlaySound.swift in Sources */,
 				256855932ADE827F006BC0F6 /* TestHistory.swift in Sources */,

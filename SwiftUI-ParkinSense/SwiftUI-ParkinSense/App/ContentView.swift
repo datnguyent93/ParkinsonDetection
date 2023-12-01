@@ -29,7 +29,7 @@ struct ContentView: View {
                     //.offset(y:-500)
                     NavigationLink{
                         //ProfilePage()
-                        Login()
+                        MainPage()
                             .navigationBarBackButtonHidden()
                     } label: {
                         Text("Tap to Continue")
