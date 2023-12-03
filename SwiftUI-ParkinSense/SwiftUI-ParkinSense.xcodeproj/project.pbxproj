@@ -56,6 +56,10 @@
 		256855912ADE826B006BC0F6 /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256855902ADE826B006BC0F6 /* Information.swift */; };
 		256855932ADE827F006BC0F6 /* TestHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256855922ADE827F006BC0F6 /* TestHistory.swift */; };
 		E158BDF42B19357800E06171 /* RecordingDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E158BDF32B19357800E06171 /* RecordingDataModel.swift */; };
+		E158BDF62B19381500E06171 /* python-stdlib in Resources */ = {isa = PBXBuildFile; fileRef = E158BDF52B19381500E06171 /* python-stdlib */; };
+		E158BDF82B19383000E06171 /* Python.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E158BDF72B19383000E06171 /* Python.xcframework */; };
+		E158BDFC2B19395C00E06171 /* dylib-Info-template.plist in Resources */ = {isa = PBXBuildFile; fileRef = E158BDFB2B19395C00E06171 /* dylib-Info-template.plist */; };
+		E158BDFF2B193C5A00E06171 /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = E158BDFE2B193C5A00E06171 /* PythonKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +133,9 @@
 		256855902ADE826B006BC0F6 /* Information.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Information.swift; sourceTree = "<group>"; };
 		256855922ADE827F006BC0F6 /* TestHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHistory.swift; sourceTree = "<group>"; };
 		E158BDF32B19357800E06171 /* RecordingDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordingDataModel.swift; sourceTree = "<group>"; };
+		E158BDF52B19381500E06171 /* python-stdlib */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "python-stdlib"; sourceTree = "<group>"; };
+		E158BDF72B19383000E06171 /* Python.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Python.xcframework; sourceTree = "<group>"; };
+		E158BDFB2B19395C00E06171 /* dylib-Info-template.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "dylib-Info-template.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +143,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E158BDF82B19383000E06171 /* Python.xcframework in Frameworks */,
+				E158BDFF2B193C5A00E06171 /* PythonKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +175,9 @@
 		0DC3A87E2AC3FEF10009B7D5 = {
 			isa = PBXGroup;
 			children = (
+				E158BDFB2B19395C00E06171 /* dylib-Info-template.plist */,
+				E158BDF72B19383000E06171 /* Python.xcframework */,
+				E158BDF52B19381500E06171 /* python-stdlib */,
 				0DC3A8892AC3FEF10009B7D5 /* SwiftUI-ParkinSense */,
 				0DC3A89A2AC3FEF30009B7D5 /* SwiftUI-ParkinSenseTests */,
 				0DC3A8A42AC3FEF30009B7D5 /* SwiftUI-ParkinSenseUITests */,
@@ -449,6 +461,8 @@
 				0DC3A8832AC3FEF10009B7D5 /* Sources */,
 				0DC3A8842AC3FEF10009B7D5 /* Frameworks */,
 				0DC3A8852AC3FEF10009B7D5 /* Resources */,
+				E158BDF92B1938A300E06171 /* Purge Python Binary Modules for Non-Target Platforms */,
+				E158BDFA2B1938DC00E06171 /* Sign Python Binary Modules */,
 			);
 			buildRules = (
 			);
@@ -456,6 +470,7 @@
 			);
 			name = "SwiftUI-ParkinSense";
 			packageProductDependencies = (
+				E158BDFE2B193C5A00E06171 /* PythonKit */,
 			);
 			productName = "SwiftUI-ParkinSense";
 			productReference = 0DC3A8872AC3FEF10009B7D5 /* SwiftUI-ParkinSense.app */;
@@ -530,6 +545,7 @@
 			);
 			mainGroup = 0DC3A87E2AC3FEF10009B7D5;
 			packageReferences = (
+				E158BDFD2B193C5A00E06171 /* XCRemoteSwiftPackageReference "PythonKit" */,
 			);
 			productRefGroup = 0DC3A8882AC3FEF10009B7D5 /* Products */;
 			projectDirPath = "";
@@ -549,9 +565,11 @@
 			files = (
 				057C12302B0F29CF0043CBBE /* Constantia Bold.ttf in Resources */,
 				2551A7232AE7954600F4EE18 /* OSound.mp3 in Resources */,
+				E158BDF62B19381500E06171 /* python-stdlib in Resources */,
 				2551A7212AE7954600F4EE18 /* Timer.mp3 in Resources */,
 				2551A7242AE7954600F4EE18 /* ESound.mp3 in Resources */,
 				057C122F2B0F29CC0043CBBE /* constan.ttf in Resources */,
+				E158BDFC2B19395C00E06171 /* dylib-Info-template.plist in Resources */,
 				0DC3A8922AC3FEF30009B7D5 /* Preview Assets.xcassets in Resources */,
 				256855752ADE7B50006BC0F6 /* Vowel Sound in Resources */,
 				2551A7222AE7954600F4EE18 /* ISound.mp3 in Resources */,
@@ -576,6 +594,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E158BDF92B1938A300E06171 /* Purge Python Binary Modules for Non-Target Platforms */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Purge Python Binary Modules for Non-Target Platforms";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [ \"$EFFECTIVE_PLATFORM_NAME\" = \"-iphonesimulator\" ]; then\n    echo \"Purging Python modules for iOS Device\"\n    find \"$CODESIGNING_FOLDER_PATH/python-stdlib\" -name \"*.*-iphoneos.dylib\" -exec rm -f \"{}\" \\;\nelse\n    echo \"Purging Python modules for iOS Simulator\"\n    find \"$CODESIGNING_FOLDER_PATH\" -name \"*.*-iphonesimulator.dylib\" -exec rm -f \"{}\" \\;\nfi\n";
+		};
+		E158BDFA2B1938DC00E06171 /* Sign Python Binary Modules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Sign Python Binary Modules";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nset -e\n\ninstall_dylib () {\n    INSTALL_BASE=$1\n    FULL_DYLIB=$2\n\n    # The name of the .dylib file\n    DYLIB=$(basename \"$FULL_DYLIB\")\n    # The name of the .dylib file, relative to the install base\n    RELATIVE_DYLIB=${FULL_DYLIB#$CODESIGNING_FOLDER_PATH/$INSTALL_BASE/}\n    # The (hopefully unique) name of the framework, constructed by replacing path\n    # separators in the relative name with underscores.\n    FRAMEWORK_NAME=$(echo $RELATIVE_DYLIB | cut -d \".\" -f 1 | tr \"/\" \"_\");\n    # A bundle identifier; not actually used, but required by Xcode framework packaging\n    FRAMEWORK_BUNDLE_ID=$(echo $PRODUCT_BUNDLE_IDENTIFIER.$FRAMEWORK_NAME | tr \"_\" \"-\")\n    # The name of the framework folder.\n    FRAMEWORK_FOLDER=\"Frameworks/$FRAMEWORK_NAME.framework\"\n\n    # If the framework folder doesn't exist, create it.\n    if [ ! -d \"$CODESIGNING_FOLDER_PATH/$FRAMEWORK_FOLDER\" ]; then\n        echo \"Creating framework for $RELATIVE_DYLIB\"\n        mkdir -p \"$CODESIGNING_FOLDER_PATH/$FRAMEWORK_FOLDER\"\n\n        cp \"$CODESIGNING_FOLDER_PATH/dylib-Info-template.plist\" \"$CODESIGNING_FOLDER_PATH/$FRAMEWORK_FOLDER/Info.plist\"\n        defaults write \"$CODESIGNING_FOLDER_PATH/$FRAMEWORK_FOLDER/Info.plist\" CFBundleExecutable -string \"$DYLIB\"\n        defaults write \"$CODESIGNING_FOLDER_PATH/$FRAMEWORK_FOLDER/Info.plist\" CFBundleIdentifier -string \"$FRAMEWORK_BUNDLE_ID\"\n    fi\n\n    echo \"Installing binary for $RELATIVE_DYLIB\"\n    mv \"$FULL_DYLIB\" \"$CODESIGNING_FOLDER_PATH/$FRAMEWORK_FOLDER\"\n}\n\necho \"Install standard library dylibs...\"\nfind \"$CODESIGNING_FOLDER_PATH/python-stdlib/lib-dynload\" -name \"*.dylib\" | while read FULL_DYLIB; do\n    install_dylib python-stdlib/lib-dynload \"$FULL_DYLIB\"\ndone\n\n# Clean up dylib template\nrm -f \"$CODESIGNING_FOLDER_PATH/dylib-Info-template.plist\"\n\necho \"Signing frameworks as $EXPANDED_CODE_SIGN_IDENTITY_NAME ($EXPANDED_CODE_SIGN_IDENTITY)...\"\nfind \"$CODESIGNING_FOLDER_PATH/Frameworks\" -name \"*.framework\" -exec /usr/bin/codesign --force --sign \"$EXPANDED_CODE_SIGN_IDENTITY\" ${OTHER_CODE_SIGN_FLAGS:-} -o runtime --timestamp=none --preserve-metadata=identifier,entitlements,flags --generate-entitlement-der \"{}\" \\;\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0DC3A8832AC3FEF10009B7D5 /* Sources */ = {
@@ -780,8 +837,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-ParkinSense/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 52PD8SPA46;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "SwiftUI-ParkinSense/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -813,8 +871,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-ParkinSense/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 52PD8SPA46;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "SwiftUI-ParkinSense/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -962,6 +1021,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E158BDFD2B193C5A00E06171 /* XCRemoteSwiftPackageReference "PythonKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pvieito/PythonKit.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E158BDFE2B193C5A00E06171 /* PythonKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E158BDFD2B193C5A00E06171 /* XCRemoteSwiftPackageReference "PythonKit" */;
+			productName = PythonKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0DC3A87F2AC3FEF10009B7D5 /* Project object */;
 }

@@ -5,8 +5,28 @@
 //  Created by user242759 on 04/07/1402 AP.
 //
 import SwiftUI
+import Python
+import PythonKit
+
+func myPython() -> Void {
+    guard let stdLibPath = Bundle.main.path(forResource: "python-stdlib", ofType: nil) else { return }
+    guard let libDynloadPath = Bundle.main.path(forResource: "python-stdlib/lib-dynload", ofType: nil) else { return }
+    setenv("PYTHONHOME", stdLibPath, 1)
+    setenv("PYTHONPATH", "\(stdLibPath):\(libDynloadPath)", 1)
+    Py_Initialize()
+    // we now have a Python interpreter ready to be used
+    let sys = Python.import("sys")
+    print("Python Version: \(sys.version_info.major).\(sys.version_info.minor)")
+    print("Python Encoding: \(sys.getdefaultencoding().upper())")
+    print("Python Path: \(sys.path)")
+
+    _ = Python.import("math") // verifies `lib-dynload` is found and signed successfully
+}
 
 struct ContentView: View {
+    init() {
+        myPython()
+    }
     var body: some View {
         NavigationStack{
             ZStack{
