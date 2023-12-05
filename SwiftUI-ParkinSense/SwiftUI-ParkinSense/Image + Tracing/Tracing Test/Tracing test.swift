@@ -80,7 +80,7 @@ struct AtemptButton: View {
     @State private var fadeInOut = true
     var body: some View {
         NavigationLink{
-        Tracing_test2()
+        Result()
             .navigationBarBackButtonHidden()
         
     } label: {

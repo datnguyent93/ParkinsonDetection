@@ -34,7 +34,7 @@ struct Instruction2: View {
             Text("The next vowel is coming up")
                 .font(.custom("Gurmukhi MN", size: 50))
         }.opacity(fadeInOut ? 0 : 1)
-        .animation(Animation.easeInOut(duration: 7.4) .delay(1.2), value: fadeInOut)
+        .animation(Animation.easeInOut(duration: 2) .delay(1.2), value: fadeInOut)
         .onAppear(){
             fadeInOut = true
 
@@ -66,7 +66,7 @@ struct EVowel: View {
             
             }
                 .opacity(fadeInOut ? 0 : 1)
-                    .animation(Animation.easeInOut(duration: 4.4) .delay(7.4), value: fadeInOut)
+                    .animation(Animation.easeInOut(duration: 2) .delay(7.4), value: fadeInOut)
                 
                     .onAppear(){
                         playSound(soundName: "ESound", extension: "mp3", delay: 9.0)
@@ -75,7 +75,7 @@ struct EVowel: View {
                     }
         
             .opacity(fadeInOut ? 1 : 0)
-                .animation(Animation.easeInOut(duration: 29.4) .delay(29.0), value: fadeInOut)
+                .animation(Animation.easeInOut(duration: 2) .delay(29.0), value: fadeInOut)
             
                
         
@@ -100,7 +100,7 @@ struct NextButtonI: View {
             .cornerRadius(40)
             .position(x: 973, y:937)
             .opacity(fadeInOut ? 0 : 1)
-            .animation(Animation.easeInOut(duration: 33.4) .delay(30.4), value: fadeInOut)
+            .animation(Animation.easeInOut(duration: 2) .delay(30.4), value: fadeInOut)
             
                 .onAppear(){
                     fadeInOut = false

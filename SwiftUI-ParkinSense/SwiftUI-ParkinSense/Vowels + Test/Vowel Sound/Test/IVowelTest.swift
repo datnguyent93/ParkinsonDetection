@@ -52,10 +52,10 @@ struct IVowel: View {
                 
             
             } .opacity(fadeInOut ? 0 : 1)
-                .animation(Animation.easeInOut(duration: 4.4) .delay(7.4), value: fadeInOut)
+                .animation(Animation.easeInOut(duration: 2) .delay(4), value: fadeInOut)
             
                 .onAppear(){
-                    playSound(soundName: "ISound", extension: "mp3", delay: 9.0)
+                    playSound(soundName: "ISound", extension: "mp3", delay: 11)
                     fadeInOut = false
 
                 }
@@ -85,7 +85,7 @@ struct NextButtonO: View {
             .cornerRadius(40)
             .position(x: 973, y:937)
             .opacity(fadeInOut ? 0 : 1)
-            .animation(Animation.easeInOut(duration: 33.4) .delay(30.4), value: fadeInOut)
+            .animation(Animation.easeInOut(duration: 2) .delay(30.4), value: fadeInOut)
             
                 .onAppear(){
                     fadeInOut = false

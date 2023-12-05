@@ -55,13 +55,13 @@ struct OVowel: View {
                 .animation(Animation.easeInOut(duration: 4.4) .delay(7.4), value: fadeInOut)
             
                 .onAppear(){
-                    playSound(soundName: "OSound", extension: "mp3", delay: 9.0)
+                    playSound(soundName: "OSound", extension: "mp3", delay: 11)
                     fadeInOut = false
 
                 }
     
         .opacity(fadeInOut ? 1 : 0)
-            .animation(Animation.easeInOut(duration: 29.4) .delay(29.0), value: fadeInOut)
+            .animation(Animation.easeInOut(duration: 2) .delay(29.0), value: fadeInOut)
                
         
 
@@ -85,7 +85,7 @@ struct NextButtonU: View {
             .cornerRadius(40)
             .position(x: 973, y:937)
             .opacity(fadeInOut ? 0 : 1)
-            .animation(Animation.easeInOut(duration: 33.4) .delay(30.4), value: fadeInOut)
+            .animation(Animation.easeInOut(duration: 2) .delay(30.4), value: fadeInOut)
             
                 .onAppear(){
                     fadeInOut = false

@@ -22,12 +22,6 @@
 		250470D92AD3664D0053D8EF /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250470D82AD3664D0053D8EF /* MainPage.swift */; };
 		250470DF2AD371350053D8EF /* Timer2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250470DE2AD371350053D8EF /* Timer2.swift */; };
 		250470E12AD372420053D8EF /* AVowelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250470E02AD372420053D8EF /* AVowelTest.swift */; };
-		2551A71F2AE7954600F4EE18 /* USound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2551A7192AE7954600F4EE18 /* USound.mp3 */; };
-		2551A7202AE7954600F4EE18 /* ASound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2551A71A2AE7954600F4EE18 /* ASound.mp3 */; };
-		2551A7212AE7954600F4EE18 /* Timer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2551A71B2AE7954600F4EE18 /* Timer.mp3 */; };
-		2551A7222AE7954600F4EE18 /* ISound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2551A71C2AE7954600F4EE18 /* ISound.mp3 */; };
-		2551A7232AE7954600F4EE18 /* OSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2551A71D2AE7954600F4EE18 /* OSound.mp3 */; };
-		2551A7242AE7954600F4EE18 /* ESound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2551A71E2AE7954600F4EE18 /* ESound.mp3 */; };
 		2551A7262AE7ABF500F4EE18 /* TestHistorydata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2551A7252AE7ABF500F4EE18 /* TestHistorydata.swift */; };
 		256855512ADE729B006BC0F6 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256855502ADE729B006BC0F6 /* Timer.swift */; };
 		256855562ADE75AB006BC0F6 /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256855552ADE75AB006BC0F6 /* PlaySound.swift */; };
@@ -60,6 +54,12 @@
 		E158BDF82B19383000E06171 /* Python.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E158BDF72B19383000E06171 /* Python.xcframework */; };
 		E158BDFC2B19395C00E06171 /* dylib-Info-template.plist in Resources */ = {isa = PBXBuildFile; fileRef = E158BDFB2B19395C00E06171 /* dylib-Info-template.plist */; };
 		E158BDFF2B193C5A00E06171 /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = E158BDFE2B193C5A00E06171 /* PythonKit */; };
+		E1CC1B492B1C500300412497 /* test.wav in Resources */ = {isa = PBXBuildFile; fileRef = E1CC1B482B1C500300412497 /* test.wav */; };
+		E1CC1B552B1F081400412497 /* ISound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E1CC1B502B1F081400412497 /* ISound.mp3 */; };
+		E1CC1B562B1F081400412497 /* ASound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E1CC1B512B1F081400412497 /* ASound.mp3 */; };
+		E1CC1B572B1F081400412497 /* ESound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E1CC1B522B1F081400412497 /* ESound.mp3 */; };
+		E1CC1B582B1F081400412497 /* OSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E1CC1B532B1F081400412497 /* OSound.mp3 */; };
+		E1CC1B592B1F081400412497 /* USound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E1CC1B542B1F081400412497 /* USound.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,12 +99,6 @@
 		250470D82AD3664D0053D8EF /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
 		250470DE2AD371350053D8EF /* Timer2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer2.swift; sourceTree = "<group>"; };
 		250470E02AD372420053D8EF /* AVowelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVowelTest.swift; sourceTree = "<group>"; };
-		2551A7192AE7954600F4EE18 /* USound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = USound.mp3; sourceTree = "<group>"; };
-		2551A71A2AE7954600F4EE18 /* ASound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ASound.mp3; sourceTree = "<group>"; };
-		2551A71B2AE7954600F4EE18 /* Timer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Timer.mp3; sourceTree = "<group>"; };
-		2551A71C2AE7954600F4EE18 /* ISound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ISound.mp3; sourceTree = "<group>"; };
-		2551A71D2AE7954600F4EE18 /* OSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = OSound.mp3; sourceTree = "<group>"; };
-		2551A71E2AE7954600F4EE18 /* ESound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ESound.mp3; sourceTree = "<group>"; };
 		2551A7252AE7ABF500F4EE18 /* TestHistorydata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHistorydata.swift; sourceTree = "<group>"; };
 		256855502ADE729B006BC0F6 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 		256855552ADE75AB006BC0F6 /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
@@ -136,6 +130,12 @@
 		E158BDF52B19381500E06171 /* python-stdlib */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "python-stdlib"; sourceTree = "<group>"; };
 		E158BDF72B19383000E06171 /* Python.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Python.xcframework; sourceTree = "<group>"; };
 		E158BDFB2B19395C00E06171 /* dylib-Info-template.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "dylib-Info-template.plist"; sourceTree = "<group>"; };
+		E1CC1B482B1C500300412497 /* test.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = test.wav; sourceTree = "<group>"; };
+		E1CC1B502B1F081400412497 /* ISound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ISound.mp3; sourceTree = "<group>"; };
+		E1CC1B512B1F081400412497 /* ASound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ASound.mp3; sourceTree = "<group>"; };
+		E1CC1B522B1F081400412497 /* ESound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ESound.mp3; sourceTree = "<group>"; };
+		E1CC1B532B1F081400412497 /* OSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = OSound.mp3; sourceTree = "<group>"; };
+		E1CC1B542B1F081400412497 /* USound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = USound.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +199,8 @@
 		0DC3A8892AC3FEF10009B7D5 /* SwiftUI-ParkinSense */ = {
 			isa = PBXGroup;
 			children = (
+				E1CC1B472B1C4F8E00412497 /* _Speech */,
+				E1CC1B462B1C4F6900412497 /* _Audio */,
 				0512296B2B0C5B2900CF9EF3 /* Info.plist */,
 				256855492ADE70CD006BC0F6 /* App */,
 				2568554A2ADE70F1006BC0F6 /* Core */,
@@ -246,12 +248,11 @@
 		2551A7182AE7954600F4EE18 /* Vowel Sound */ = {
 			isa = PBXGroup;
 			children = (
-				2551A7192AE7954600F4EE18 /* USound.mp3 */,
-				2551A71A2AE7954600F4EE18 /* ASound.mp3 */,
-				2551A71B2AE7954600F4EE18 /* Timer.mp3 */,
-				2551A71C2AE7954600F4EE18 /* ISound.mp3 */,
-				2551A71D2AE7954600F4EE18 /* OSound.mp3 */,
-				2551A71E2AE7954600F4EE18 /* ESound.mp3 */,
+				E1CC1B512B1F081400412497 /* ASound.mp3 */,
+				E1CC1B522B1F081400412497 /* ESound.mp3 */,
+				E1CC1B502B1F081400412497 /* ISound.mp3 */,
+				E1CC1B532B1F081400412497 /* OSound.mp3 */,
+				E1CC1B542B1F081400412497 /* USound.mp3 */,
 			);
 			path = "Vowel Sound";
 			sourceTree = "<group>";
@@ -451,6 +452,21 @@
 			path = "Test History";
 			sourceTree = "<group>";
 		};
+		E1CC1B462B1C4F6900412497 /* _Audio */ = {
+			isa = PBXGroup;
+			children = (
+				E1CC1B482B1C500300412497 /* test.wav */,
+			);
+			path = _Audio;
+			sourceTree = "<group>";
+		};
+		E1CC1B472B1C4F8E00412497 /* _Speech */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = _Speech;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -564,17 +580,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				057C12302B0F29CF0043CBBE /* Constantia Bold.ttf in Resources */,
-				2551A7232AE7954600F4EE18 /* OSound.mp3 in Resources */,
 				E158BDF62B19381500E06171 /* python-stdlib in Resources */,
-				2551A7212AE7954600F4EE18 /* Timer.mp3 in Resources */,
-				2551A7242AE7954600F4EE18 /* ESound.mp3 in Resources */,
+				E1CC1B592B1F081400412497 /* USound.mp3 in Resources */,
+				E1CC1B562B1F081400412497 /* ASound.mp3 in Resources */,
+				E1CC1B552B1F081400412497 /* ISound.mp3 in Resources */,
+				E1CC1B582B1F081400412497 /* OSound.mp3 in Resources */,
+				E1CC1B492B1C500300412497 /* test.wav in Resources */,
 				057C122F2B0F29CC0043CBBE /* constan.ttf in Resources */,
 				E158BDFC2B19395C00E06171 /* dylib-Info-template.plist in Resources */,
+				E1CC1B572B1F081400412497 /* ESound.mp3 in Resources */,
 				0DC3A8922AC3FEF30009B7D5 /* Preview Assets.xcassets in Resources */,
 				256855752ADE7B50006BC0F6 /* Vowel Sound in Resources */,
-				2551A7222AE7954600F4EE18 /* ISound.mp3 in Resources */,
-				2551A7202AE7954600F4EE18 /* ASound.mp3 in Resources */,
-				2551A71F2AE7954600F4EE18 /* USound.mp3 in Resources */,
 				0DC3A88F2AC3FEF30009B7D5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

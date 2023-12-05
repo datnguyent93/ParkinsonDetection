@@ -16,11 +16,24 @@ func myPython() -> Void {
     Py_Initialize()
     // we now have a Python interpreter ready to be used
     let sys = Python.import("sys")
+    let os = Python.import("os")
+    if let projectDir = ProcessInfo.processInfo.environment["PROJECT_DIR"] {
+       FileManager.default.changeCurrentDirectoryPath(projectDir)
+    }
+
+    let currentDirectoryPath = FileManager.default.currentDirectoryPath
     print("Python Version: \(sys.version_info.major).\(sys.version_info.minor)")
     print("Python Encoding: \(sys.getdefaultencoding().upper())")
-    print("Python Path: \(sys.path)")
-
-    _ = Python.import("math") // verifies `lib-dynload` is found and signed successfully
+    print("Path: \(os.getcwd())")
+    
+    let speechDirPath = os.path.join(currentDirectoryPath, "_Speech")
+    let audioDirPath = os.path.join(currentDirectoryPath, "_Audio")
+    
+    print("Speech path: \(speechDirPath)")
+    print("Audio path: \(audioDirPath)")
+    
+    //let random_array = np.random.rand(3, 3)
+    //print("\(random_array)")
 }
 
 struct ContentView: View {
