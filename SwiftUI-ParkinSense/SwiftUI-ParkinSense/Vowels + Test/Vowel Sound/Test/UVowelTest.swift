@@ -67,7 +67,7 @@ struct UVowel: View {
            
         }
             .opacity(fadeInOut ? 1 : 0)
-                .animation(Animation.easeInOut(duration: 29.4) .delay(29.0), value: fadeInOut)
+                .animation(Animation.easeInOut(duration: 2) .delay(29.0), value: fadeInOut)
             
                
         
@@ -91,7 +91,7 @@ struct NextButtonT: View {
             .cornerRadius(40)
             .position(x: 973, y:937)
             .opacity(fadeInOut ? 0 : 1)
-            .animation(Animation.easeInOut(duration: 33.4) .delay(30.4), value: fadeInOut)
+            .animation(Animation.easeInOut(duration: 2) .delay(30.4), value: fadeInOut)
             
                 .onAppear(){
                     fadeInOut = false

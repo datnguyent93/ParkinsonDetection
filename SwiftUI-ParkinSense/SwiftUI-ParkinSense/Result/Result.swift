@@ -31,16 +31,17 @@ struct Result: View {
                         }
                         .animation(.spring, value: percent)*/
                         
-                        Button(action: {percent = 56}, label: {
-                            Text("\nPositive")
-                                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                                //.position(/*@START_MENU_TOKEN@*/CGPoint(x: 10.0, y: 10.0)/*@END_MENU_TOKEN@*/)
-                        })
-                        Button(action: {percent = 2}, label: {
-                            Text("\nNegative")
-                                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                                //.position(/*@START_MENU_TOKEN@*/CGPoint(x: 10.0, y: 10.0)/*@END_MENU_TOKEN@*/)
-                        })
+//                        Button(action: {percent = 56}, label: {
+//                            Text("\nPositive")
+//                                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+//                                //.position(/*@START_MENU_TOKEN@*/CGPoint(x: 10.0, y: 10.0)/*@END_MENU_TOKEN@*/)
+//                        })
+//                        Button(action: {percent = 2}, label: {
+//                            Text("\nNegative")
+//                                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+//                                //.position(/*@START_MENU_TOKEN@*/CGPoint(x: 10.0, y: 10.0)/*@END_MENU_TOKEN@*/)
+//                        })
+                        let percent = 56;
                         if(percent <= 50 && percent > 0){
                             Group{
                                 Text("Result: ")
