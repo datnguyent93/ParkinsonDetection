@@ -9,95 +9,94 @@ import SwiftUI
 
 
 struct MenuBar: View {
+    let screen = UIScreen.main.bounds
     @State private var notification = false
     @State private var home = false
     @State private var testHistory = false
     @State private var information = false
     @State private var setting = false
     @State private var logout = false
+    
     var body: some View {
         NavigationStack{
-            ZStack(alignment: .center){
-                Rectangle()
-                    .frame(width: 1834, height: 160)
-                    .position(x:513, y:0)
-                    .foregroundColor(Color("BarColor").opacity(0.85))
-                HStack {
+            ZStack(alignment: .top){
+                //Color.black
+                    //.ignoresSafeArea()
+                VStack{
+                    Color("pOrange").frame(height: 100)
+                        .edgesIgnoringSafeArea(.top)
+                    Spacer()
+                }
+                HStack(){
                     Text("Welcome User")
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
+                        .font(.custom("Constantia", size: 45))
                         .bold()
-                        .position(x:170, y:30)
-                        .font(.custom("Sinhala Sangam MN Bold", size: 40))
+                        .padding(.top, 30)
+                        //.lineLimit(1)
+                        
                     Button(action: {
                         self.notification.toggle()
                         
                     }, label:  {
                         Image(systemName: "bell.fill")
-                            .accentColor(.white.opacity(0.84))
+                            .accentColor(.black)
+                            .font(.system(size: 50))
+                            .padding(.top, 20)
+                    })
+                    .padding(.leading, screen.width * 0.5)                    //.position(x:738, y:30)
+                    .navigationDestination(isPresented: $notification){
+                        Notification()
+                    }
+                    //Spacer()
+                    Menu {
+                        Button("Home", action: {self.home.toggle()})
+                        Button("Test History") {
+                            self.testHistory.toggle()
+                        }
+                        Button("Information") {
+                            self.information.toggle()
+                        }
+                        Button("Settings") {
+                            self.setting.toggle()
+                        }
+                        Button("Logout") {
+                            self.logout.toggle()
+                        }
+                        
+                        
+                    } label: {
+                        Image(systemName: "text.justify")
+                            .accentColor(.black)
                             .font(.system(size: 50))
                         
-                    }).position(x:730, y:30)
-                        .background(
-                            NavigationLink(destination:  Notification().navigationBarBackButtonHidden(), isActive: $notification) {
-                            EmptyView()
-                          }
-                        )
-                 
-                        
-                        Menu {
-                            Button("HomePage") {
-                                self.home.toggle()
-                                    }
-                            Button("TestHistory") {
-                                      self.testHistory.toggle()
-                                    }
-                            Button("Information") {
-                                      self.information.toggle()
-                                    }
-                            Button("Setting") {
-                                      self.setting.toggle()
-                                    }
-                            Button("Logout") {
-                                      self.logout.toggle()
-                                    }
-                      
-                            
-                        } label: {
-                            Image(systemName: "text.justify")
-                                .accentColor(.white.opacity(0.84))
-                                .font(.system(size: 60))
-                            
-                        }.position(x:380, y:30)
-                        .background(
-                            Group {
-            
-                                NavigationLink(destination: MainPage().navigationBarBackButtonHidden(), isActive:$home) {
-                                EmptyView()
-                                  
-                              }
-                                NavigationLink(destination: TestHistory().navigationBarBackButtonHidden(), isActive: $testHistory) {
-                                  EmptyView()
-                                  
-                                        
-                                }
-                                NavigationLink(destination: Information().navigationBarBackButtonHidden(), isActive: $information) {
-                                  EmptyView()
-                                        
-                                }
-                                NavigationLink(destination: Settings().navigationBarBackButtonHidden(), isActive: $setting) {
-                                  EmptyView()
-                                        
-                                }
-                            NavigationLink(destination: ContentView().navigationBarBackButtonHidden(), isActive: $logout) {
-                                  EmptyView()
-                                        
-                                }
-                            }
-                          )
-                               
-                   
-                }
-            }
+                    }
+                    //.position(y:30)
+                    .navigationDestination(isPresented: $home){
+                        MainPage().navigationBarBackButtonHidden()
+                    }
+                    .navigationDestination(isPresented: $testHistory){
+                        TestHistory().navigationBarBackButtonHidden()
+                    }
+                    .navigationDestination(isPresented: $information){
+                        Information().navigationBarBackButtonHidden()
+                    }
+                    .navigationDestination(isPresented: $setting){
+                        Settings().navigationBarBackButtonHidden()
+                    }
+                    .navigationDestination(isPresented: $logout){
+                        ContentView().navigationBarBackButtonHidden()
+                    }
+                    
+                } //hstack
+                .frame(width: .infinity, height: .infinity, alignment: .top)
+                .edgesIgnoringSafeArea(.top)
+                .padding(.top, 3)
+                
+            }//zstack
+            .frame(width: .infinity, height: 100)
+            //.border(.blue)
+            Spacer()
         }.navigationViewStyle(StackNavigationViewStyle())
     }
 }

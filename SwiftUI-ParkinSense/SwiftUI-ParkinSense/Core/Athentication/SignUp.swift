@@ -15,6 +15,7 @@ struct SignUp: View {
     @State private var wrongLName = 0
     @State private var wrongPassword = 0
     @State private var authorized = false
+    @State private var signup = true
     
     var body: some View {
         NavigationView{
@@ -30,7 +31,7 @@ struct SignUp: View {
                 ZStack{
                     VStack{
                         
-                        Text("SignUp")
+                        Text("Sign Up")
                             .font(.largeTitle)
                             .bold()
                             .padding()
@@ -82,9 +83,9 @@ struct SignUp: View {
                             .background(Color.purple)
                             .cornerRadius(40)
                             .offset(x:70)
-                        NavigationLink(destination: MainPage().navigationBarBackButtonHidden(), isActive: $authorized) {
-                            EmptyView()
-                        }
+                            .navigationDestination(isPresented: $signup){
+                                MainPage().navigationBarBackButtonHidden()
+                            }
                         
                     }
                 }.offset(x:-20)

@@ -16,16 +16,16 @@ struct AVowelTest: View {
         NavigationView{
             ZStack{
                
-            Instruction()
-            ZStack{
-                RecordAndStop(audioRecorder: AudioRecorder())
-                AVowel()
-  
-               TimerView()
-                Goodjob()
-                NextButton()
-            }
-        }
+                Instruction()
+                ZStack{
+                    RecordAndStop(audioRecorder: AudioRecorder())
+                    AVowel()
+      
+                   TimerView()
+                    Goodjob()
+                    NextButton()
+                }
+            }.background(Color.black).ignoresSafeArea()
 
         }.navigationViewStyle(StackNavigationViewStyle())
     }
@@ -37,8 +37,10 @@ struct Instruction: View {
             Text("Instruction")  
                 .bold()
                 .font(.custom("Avenir Next", size: 80))
-            Text(" Please repeat the vowel you hear.\n You will have 5 seconds to Attempt and complete the task.\n The timer will start after you hear the vowel for the second time.\n Then the mic will turn red for recording.")
+                .foregroundColor(.white)
+            Text(" Please repeat the vowel you hear.\n You will have 5 seconds to attempt and complete the task.\n The timer will start after you hear the vowel for the second time.\n Then the mic will turn red for recording.")
                 .font(.custom("Gurmukhi MN", size: 40))
+                .foregroundColor(.white)
         }.opacity(fadeInOut ? 0 : 1)
         .animation(Animation.easeInOut(duration: 7.4) .delay(1.2), value: fadeInOut)
         .onAppear(){
@@ -90,7 +92,7 @@ struct AVowel: View {
                         .font(.largeTitle)
                         .padding()
                         .frame(width: 680, height: 580)
-                        .background(Color.white.opacity(0.85))
+                        .background(Color("pGreen"))
                     
             }.onAppear(){
                 playSound(soundName: "ASound", extension: "mp3", delay: 9.0)
